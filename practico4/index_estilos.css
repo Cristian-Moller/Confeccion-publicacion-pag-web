@@ -1,0 +1,151 @@
+
+#volver-atrás{
+    position: fixed;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+}
+
+#caja-principal{
+    border: 3px solid black;
+    width: 60%;
+    height: auto;
+    background-color: orange;
+    margin-left: 20%;
+    display: inline-block;
+}
+#borde-rojo{
+    border: 1px dashed red;
+    width: 56%;
+    height: 400px;
+    display: inline-block;
+    margin: 1%;
+    margin-left: 2%;
+    vertical-align: top;
+}
+.borde-rojo{
+    width: 95%;
+    background-color: white;
+    height: 25%;
+    margin: 2%;
+    border: 1px solid black;
+    text-align: center;
+}
+h1, h2{
+    margin-bottom: 0;
+}
+p{
+    margin: 0;
+}
+.parrafo1{
+    text-align: left;
+}
+.borde-rojo1{
+    width: 95%;
+    background-color: white;
+    height: 35%;
+    margin: 2%;
+    border: 1px solid black;
+    text-align: center;
+}
+#borde-gris{
+    border: 1px dashed gray;
+    width: 37%;
+    height: 400px;
+    margin-left: -1%;
+    display: inline-block;
+    margin: 1%;
+}
+.foto{
+    width: 96%;
+    height: 45%;
+    margin: 2%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+#redes{
+    border: 1px solid black;
+    background-color: white;
+    display: inline-block;
+    width: 96%;
+    height: 100px;
+    text-align: center;
+    margin: 2%;
+    margin-top: 5%;
+}
+.txt-redes{
+    margin-top: 2%;
+    border: 1px dashed red;
+    width: 90%;
+    margin-left: 5%;
+}
+.redes-sociales{
+    border: 1px solid black;
+    display: inline-block;
+    width: 15%;
+    height: 50px;
+    text-align: center;
+    margin: 2.5%;
+}
+
+#borde-rosa{
+    border: 1px dashed pink;
+    width: 96%;
+    height: auto;
+    margin-left: 2%;
+}
+.rosa{
+    border: 1px solid black;
+    width: 90%;
+    height: 90%;
+    margin: 3%;
+    background-color: white;
+    text-align: center;
+}
+
+#borde-verde{
+    border: 1px dashed greenyellow;
+    width: 96%;
+    height: auto;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+.verde{
+    border: 1px solid black;
+    width: 90%;
+    height: 90%;
+    margin: 3%;
+    background-color: white;
+    text-align: left;
+}
+.grupo-verde{
+    display: inline-block;
+    border: 1px solid black;
+    width: 20%;
+    height: 50px;
+    margin: 1% 2%;
+    text-align: center;
+}
+.materias{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+#borde-azul{
+    border: 1px dashed blue;
+    background-color: white;
+    width: 96%;
+    height: 40px;
+    margin: 2% 2%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Hurricane', cursive;
+    font-size: 20px;
+}
