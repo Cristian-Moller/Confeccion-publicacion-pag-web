@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 700px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+#volver-atrás{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+}
+#caja-fondo{
+    border: 1px solid black;
+    width: 80%;
+    height: 90%;
+    background-image: url('/practico10/imagenes/espacio.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-flex;
+    justify-content: space-around   ;
+    align-items: center;
+    flex-wrap: wrap;
+
+    div{
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 25%;
+        height: 35%;
+    
+        img{
+            width: 100%;
+            height: 100%;  
+        }
+    }
+    #caja1{
+        transform: skew(21deg, 15deg);
+    }
+    #caja2{
+        transform: skew(25deg, 15deg);
+    }
+    #caja3{
+        transform: skew(-15deg, -13deg);
+    }
+    #caja4{
+        transform: skew(-20deg, -15deg);
+    }
+    #caja5{
+        transform: skew(40deg, 15deg);
+    }
+    #caja6{
+        transform: skew(20deg, 15deg);
+    }    
+
+
+    #caja1:hover, #caja2:hover, #caja3:hover, #caja4:hover, #caja5:hover, #caja6:hover{
+        transform: skew(0);
+        
+    }
+}

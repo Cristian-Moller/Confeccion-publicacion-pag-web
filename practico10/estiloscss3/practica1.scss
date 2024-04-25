@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 3vw;
+}
+#volver-atrás{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+}
+#caja-principal{
+    border: 1px solid black;
+    background-image: url('/practico10/imagenes/pared.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 80%;
+    height: 600px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .caja-interior{
+        width: 25%;
+        height: 40%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: flex-end;
+        
+        p{
+            font-size: 5vw;
+            font-weight: bold;
+            font-style: italic;
+        }
+    }
+    .fila1{
+        border: 5px solid red;
+    }
+    .fila2{
+        border: 8px solid blue;
+    }
+    #enero{
+        background-color: rgb(184, 128, 221);
+        border-radius: 20px;
+    }
+    #febrero{
+        background-color: rgb(240, 202, 208);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    #marzo{
+        background-color: rgb(179, 179, 233);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 40px;
+    }
+    #abril{
+        background-color: rgb(166, 223, 199);
+        border-radius: 20px;
+    }
+    #abril:hover{
+        border-radius: 30px;
+    }
+
+    #mayo{
+        background-color: rgb(238, 211, 161);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    #mayo:hover{
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    #junio{
+        background-color: rgb(127, 176, 231);
+        border-radius: 25px;
+    }
+    #junio:hover{
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+
+}

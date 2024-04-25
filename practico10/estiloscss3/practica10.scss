@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+#volver-atrás{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+}
+#caja-fondo{
+    border: 1px solid black;
+    border-radius: 3vw;
+    background-image: url('/practico10/imagenes/escaleras.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 70%;
+    height: 650px;
+    margin-top: 3vw;
+    display: inline-flex;
+    flex-wrap: wrap;
+    column-gap: 10%;
+    justify-content: center;
+    align-items: center;
+    
+    div{
+        border: 1px solid black;
+        background-color: burlywood;
+        border-radius: 20px;
+        width: 30%;
+        height: 15%;
+        box-shadow: 5px 5px red;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 3vw;
+    }
+
+    #caja1{
+        transform: rotate(-45deg);
+    }    
+    #caja2{
+        transform: rotate(45deg);
+    }
+    #caja3{
+        transform: rotate(45deg); 
+    }
+    #caja4{
+        
+        transform: rotate(-45deg);
+    }
+}

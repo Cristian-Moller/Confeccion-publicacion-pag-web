@@ -1,0 +1,66 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+}
+
+#volver-atrás {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  background-color: #372246;
+  color: white;
+  height: 2vw;
+}
+
+body {
+  width: 100%;
+  height: 500px;
+  background-image: url("/practico10/imagenes/montanas.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #caja1 {
+  border: 1px solid black;
+  border-radius: 50px;
+  background-image: url("/practico10/imagenes/sin-fin3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 30%;
+  height: 40%;
+  -webkit-box-shadow: 25px -25px rgba(79, 221, 36, 0.5);
+          box-shadow: 25px -25px rgba(79, 221, 36, 0.5);
+  /* transparencia de la sombra al 50%, agregar una 'a' al 'rgb'*/
+}
+
+body #caja1:hover {
+  -webkit-box-shadow: 25px -25px #4fdd24;
+          box-shadow: 25px -25px #4fdd24;
+}
+
+body #caja2 {
+  border: 1px solid black;
+  border-radius: 30px;
+  background-image: url("/practico10/imagenes/city.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 30%;
+  height: 40%;
+  -webkit-box-shadow: -25px 25px rgba(13, 36, 247, 0.4);
+          box-shadow: -25px 25px rgba(13, 36, 247, 0.4);
+}
+
+body #caja2:hover {
+  -webkit-box-shadow: -25px 25px #0d24f7;
+          box-shadow: -25px 25px #0d24f7;
+}
+/*# sourceMappingURL=practica6.css.map */

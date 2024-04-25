@@ -1,0 +1,78 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#volver-atrás {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  background-color: #372246;
+  color: white;
+  height: 2vw;
+}
+
+#caja-fondo {
+  border: 1px solid black;
+  border-radius: 3vw;
+  width: 70%;
+  height: 650px;
+  margin-top: 3vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#caja-fondo #caja1 {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 35%;
+  height: 40%;
+  background: radial-gradient(yellow, blue 35%, purple 70%);
+  /* puedo ubicar los colores con el porcentanje 
+                                                                            o que se ubique automatico */
+}
+
+#caja-fondo #caja2 {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 35%;
+  height: 40%;
+  background: radial-gradient(circle at bottom left, green, yellow, #00d9ff, red);
+}
+
+#caja-fondo #caja3 {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 35%;
+  height: 40%;
+  background: radial-gradient(#00ff37, #229ce2, #770cce 10%);
+}
+
+#caja-fondo #caja4 {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 35%;
+  height: 40%;
+  background: radial-gradient(ellipse at left center, #9ed61a, #e7792f 25%, #d631b2 45%, #38c2cc 85%);
+}
+/*# sourceMappingURL=practica9.css.map */

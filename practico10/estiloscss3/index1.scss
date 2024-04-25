@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+}
+#volver-atrás{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+}
+body{
+    background-color: burlywood;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    
+}
+#caja-fondo{
+    border: 1px solid black;
+    background-image: url('/practico10/imagenes/fonde-pantalla.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 90%;
+    height: 40vw;
+    margin-top: 3vw;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+
+    #tabla-ejercicios{
+        border: 1px solid black;
+        background-color: rgb(69, 173, 125);
+        border-radius: 1vw;
+        width: 60%;
+        height: 80%;
+        display: inline-flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* justify-items: flex-start; */
+        
+        #titulo-practicas{
+            border: 1px solid black;
+            background-color: rgb(3, 65, 21);
+            color: white;
+            border-radius: 1vw;
+            width: 90%;
+            height: 4vw;
+            font-size: x-large;
+            margin-top: -2vw;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #practicas-realizadas{
+            width: 90%;
+            height: auto;
+            display: inline-flex;
+            flex-wrap: wrap;
+            column-gap: 2vw;
+            justify-content: center;
+            
+            span{
+                border: 1px solid black;
+                border-radius: 0.5vw;
+                width: 10vw;
+                height: 6vw;
+                display: inline-flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                row-gap: 0.5vw;
+                box-shadow: 0px 0px 15px rgb(73, 8, 133);
+                
+                p{
+                    text-align: center;
+                }
+                a{
+                    text-decoration: none;
+                    color: rgb(0, 0, 0);
+                    display: inline-flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    row-gap: 0.5vw;
+                }
+                a:hover{
+                    color: rgb(0, 0, 0);
+                }
+                
+            }
+            span:hover{
+                box-shadow: 0px 0px 15px rgb(73, 8, 133) inset;
+            }
+
+        }
+    }
+
+    #info-cristian{
+        /* border: 1px solid black; */
+        width: 20%;
+        height: 80%;
+        
+
+        >div{
+            border: 1px solid black;
+            background-color: rgb(46, 131, 49);
+            width: 100%;
+            height: 65%;
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-grow: 1;
+
+            h1{
+                /* border: 1px solid black; */
+                width: 100%;
+                text-align: center;
+
+                p{
+                    color: rgb(80, 5, 150);
+                }
+            }
+            #foto-perfil{
+                /* border: 1px solid black; */
+                width: 100%;
+                height: 50%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            #boton-enlace{
+                /* border: 1px solid black; */
+                width: 100%;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                }
+            }
+            #boton-enlace:hover{
+                color: rgb(80, 5, 150);
+                box-shadow: 0px 0px 25px rgb(33, 63, 34) inset;
+            }
+
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 380px){
+    *{
+        margin: 0;
+    }
+    body{
+        background-color: burlywood;
+        width: 100%;
+        height: auto;
+        display: inline-flex;
+        justify-content: space-around;
+        margin-top: 6vw;
+        margin-bottom: 4vw;
+    }
+    #volver-atrás{
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+        background-color: rgb(55, 34, 70);
+        color: white;
+        height: 8vw;
+    }
+    #caja-fondo{
+        border: 1px solid black;
+        background-image: url('/practico10/imagenes/fonde-pantalla.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 95%;
+        height: auto;
+        margin-top: 3vw;
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        /* align-items: center; */
+
+    
+        #tabla-ejercicios{
+            border: 1px solid black;
+            background-color: rgb(69, 173, 125);
+            border-radius: 1vw;
+            width: 90%;
+            height: 70%;
+            margin-top: 5vw;
+            margin-bottom: 0vw;
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            /* justify-items: flex-start; */
+            
+            #titulo-practicas{
+                border: 1px solid black;
+                background-color: rgb(3, 65, 21);
+                color: white;
+                border-radius: 1vw;
+                width: 90%;
+                height: 20vw;
+                font-size: 4vw;
+                margin-top: -10vw;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            #practicas-realizadas{
+                width: 92%;
+                height: auto;
+                display: inline-flex;
+                flex-wrap: wrap;
+                column-gap: 2vw;
+                justify-content: center;
+                
+                
+                span{
+                    border: 1px solid black;
+                    border-radius: 0.5vw;
+                    width: 37vw;
+                    height: 25vw;
+                    display: inline-flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    /* row-gap: 0.5vw; */
+                    box-shadow: 0px 0px 15px rgb(73, 8, 133);
+                    
+                    p{
+                        text-align: center;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: rgb(0, 0, 0);
+                        display: inline-flex;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        row-gap: 0.5vw;
+                    }
+                    a:hover{
+                        color: rgb(0, 0, 0);
+                    }
+                    
+                }
+                span:hover{
+                    box-shadow: 0px 0px 15px rgb(73, 8, 133) inset;
+                }
+    
+            }
+        }
+    
+        #info-cristian{
+            /* border: 1px solid black; */
+            width: 90%;
+            height: 25%;
+            
+    
+            >div{
+                border: 1px solid black;
+                background-color: rgb(46, 131, 49);
+                width: 100%;
+                height: 100%;
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                flex-grow: 1;
+    
+                h1{
+                    /* border: 1px solid black; */
+                    width: 100%;
+                    text-align: center;
+    
+                    p{
+                        color: rgb(80, 5, 150);
+                    }
+                }
+                #foto-perfil{
+                    /* border: 1px solid black; */
+                    width: 100%;
+                    height: 50%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+    
+                #boton-enlace{
+                    /* border: 1px solid black; */
+                    width: 100%;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                #boton-enlace:hover{
+                    box-shadow: 0px 0px 25px rgb(33, 63, 34) inset;
+                }
+    
+            }
+        }
+    }
+    
+}

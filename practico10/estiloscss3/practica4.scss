@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+#volver-atrás{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+}
+#caja-fondo{
+    border: 1px solid black;
+    border-radius: 25px;
+    background-image: url('/practico10/imagenes/sin-fin.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 70%;
+    height: 500px;
+    margin-top: 5vw;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    #caja1{
+        border: 1px solid black;
+        border-radius: 20px;
+        background-image: url('/practico10/imagenes/sin-fin1.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 35%;
+        height: 40%;
+        box-shadow: 25px 25px 10px rgb(87, 243, 39);
+    }
+    #caja1:hover{
+        box-shadow: 10px 10px 10px rgb(179, 196, 28);
+    }    
+    #caja2{
+        border: 1px solid black;
+        border-radius: 20px;
+        background-image: url('/practico10/imagenes/sin-fin2.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 35%;
+        height: 40%;
+        box-shadow: 10px -10px 5px rgb(179, 196, 28),
+                    -10px 10px 5px rgb(83, 185, 245);
+    }
+    #caja2:hover{
+        box-shadow: 10px -10px 5px rgb(83, 185, 245),
+                    -10px 10px 5px rgb(179, 196, 28);
+    }
+}

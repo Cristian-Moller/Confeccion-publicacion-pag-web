@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+#volver-atrás{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+}
+#caja-fondo{
+    border: 1px solid black;
+    border-radius: 3vw;
+    background-color: rgb(61, 44, 68);
+    width: 70%;
+    height: 650px;
+    margin-top: 3vw;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+
+    #caja1{
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: burlywood;
+        width: 35%;
+        height: 40%;
+        box-shadow: 20px -20px green;
+    }    
+    #caja2{
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: rgb(173, 117, 224);
+        width: 35%;
+        height: 40%;
+        box-shadow: -30px 30px 10px rgb(51, 51, 143);
+    }
+    #caja3{
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: rgb(104, 208, 243);
+        width: 35%;
+        height: 40%;
+        box-shadow: -20px -20px 10px orange;
+    }
+    #caja3:hover{
+        box-shadow: 20px -20px 10px rgb(240, 10, 10);
+    }
+    #caja4{
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: aquamarine;
+        width: 35%;
+        height: 40%;
+        box-shadow: -30px 30px 5px rgb(51, 51, 143);
+    }
+    #caja4:hover{
+        background-color: rgb(51, 51, 143);
+        box-shadow: -30px 30px 5px aquamarine;
+    }
+}

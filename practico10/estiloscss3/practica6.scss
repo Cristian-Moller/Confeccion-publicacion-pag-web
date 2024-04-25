@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+}
+#volver-atrás{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+}
+body{
+    width: 100%;
+    height: 500px;
+    background-image: url('/practico10/imagenes/montanas.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    #caja1{
+        border: 1px solid black;
+        border-radius: 50px;
+        background-image: url('/practico10/imagenes/sin-fin3.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 30%;
+        height: 40%;
+        box-shadow: 25px -25px rgba(79, 221, 36, 0.5);  /* transparencia de la sombra al 50%, agregar una 'a' al 'rgb'*/
+        
+    }
+    #caja1:hover{
+        box-shadow: 25px -25px rgba(79, 221, 36, 1);
+    }    
+    #caja2{
+        border: 1px solid black;
+        border-radius: 30px;
+        background-image: url('/practico10/imagenes/city.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 30%;
+        height: 40%;
+        box-shadow: -25px 25px rgba(13, 36, 247, 0.4);
+    }
+    #caja2:hover{
+        box-shadow: -25px 25px rgba(13, 36, 247, 1);
+    }
+
+}
+
+    
+
+
+    

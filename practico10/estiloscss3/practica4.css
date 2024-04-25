@@ -1,0 +1,79 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#volver-atrás {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  background-color: #372246;
+  color: white;
+  height: 2vw;
+}
+
+#caja-fondo {
+  border: 1px solid black;
+  border-radius: 25px;
+  background-image: url("/practico10/imagenes/sin-fin.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 70%;
+  height: 500px;
+  margin-top: 5vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#caja-fondo #caja1 {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-image: url("/practico10/imagenes/sin-fin1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 35%;
+  height: 40%;
+  -webkit-box-shadow: 25px 25px 10px #57f327;
+          box-shadow: 25px 25px 10px #57f327;
+}
+
+#caja-fondo #caja1:hover {
+  -webkit-box-shadow: 10px 10px 10px #b3c41c;
+          box-shadow: 10px 10px 10px #b3c41c;
+}
+
+#caja-fondo #caja2 {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-image: url("/practico10/imagenes/sin-fin2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 35%;
+  height: 40%;
+  -webkit-box-shadow: 10px -10px 5px #b3c41c, -10px 10px 5px #53b9f5;
+          box-shadow: 10px -10px 5px #b3c41c, -10px 10px 5px #53b9f5;
+}
+
+#caja-fondo #caja2:hover {
+  -webkit-box-shadow: 10px -10px 5px #53b9f5, -10px 10px 5px #b3c41c;
+          box-shadow: 10px -10px 5px #53b9f5, -10px 10px 5px #b3c41c;
+}
+/*# sourceMappingURL=practica4.css.map */

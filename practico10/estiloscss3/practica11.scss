@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+#volver-atrás{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+}
+#caja-fondo{
+    border: 1px solid black;
+    width: 70%;
+    height: 600px;
+    margin-top: 5vw;
+    /* display: inline-flex;
+    justify-content: space-around;
+    align-items: center; */
+
+    #titulo{
+        width: 100%;
+        height: 10%;
+        display: inline-flex;
+        
+        /* div{
+            
+        } */
+        #caja1{
+            border: 1px solid black;
+            background-color: black;
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            p{
+                font-size: 1.2vw;
+                color: white;
+            }
+        }
+        
+        #caja2{
+            border: 1px solid black;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5vw;
+            flex: 12;
+        }
+    }
+    #contenido{
+        border: 1px solid black;
+        background-image: url('/practico10/imagenes/pared1.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 90%;
+        display: inline-flex;
+
+
+        #caja3{
+            /* border: 1px solid black; */
+            width: 50%;
+            height: 100%;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-around;
+            
+            div{
+                border: 1px solid black;
+                background-color: whitesmoke;
+                border-radius: 10px;
+                width: 30%;
+                height: 14%;
+                margin-right: 3vw;
+                transform: rotate(10deg);
+                box-shadow: 20px 20px 15px rgb(140, 114, 158);
+
+                a{
+                    display: inline-flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    row-gap: 0.5vw;
+                    text-decoration: none;
+                    color: black;
+                    h3{
+                        font-size: 1.2vw;
+                    }
+                    p{
+                        font-size: 0.8vw;
+                        text-align: center;
+                    }
+                }
+            }
+            div:hover{
+                background-color: rgb(90, 183, 245);
+                transform: rotate(5deg);
+                width: 32%;
+                height: 16%;
+            }
+            
+        }
+        #caja4{
+            /* border: 1px solid black; */
+            width: 50%;
+            height: 100%;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+            
+
+            div{
+                border: 1px solid black;
+                background-color: whitesmoke;
+                border-radius: 10px;
+                width: 30%;
+                height: 14%;
+                margin-left: 3vw;
+                transform: rotate(-10deg);
+                box-shadow: 20px 20px 15px rgb(140, 114, 158);
+                a{
+                    display: inline-flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    row-gap: 0.5vw;
+                    text-decoration: none;
+                    color: black;
+                    h3{
+                        font-size: 1.2vw;
+                    }
+                    p{
+                        font-size: 0.8vw;
+                        text-align: center;
+                    }
+                }
+            }
+            div:hover{
+                background-color: rgb(90, 183, 245);
+                transform: rotate(-5deg);
+                width: 32%;
+                height: 16%;
+            }
+            
+        }
+    }
+    
+}
