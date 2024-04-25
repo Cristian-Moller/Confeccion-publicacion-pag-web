@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/practico12/estilos/estilos.css">
+    <title>Espartaco GYM</title>
+</head>
+<body>
+
+    <a href="../"><input id="volver-atrás" type="button" name="volver atrás" value="VOLVER ATRÁS"></input></a>
+
+    <div id="logo">
+        <div id="mujer"></div>
+        <div id="nombre">
+            <h1>Espartaco GYM</h1>
+        </div>
+        <div id="hombre"></div>
+    </div>
+
+    <div id="cliente">
+
+        <h2>ALTA CLIENTE</h2>
+
+        <div id="formulario">
+
+            <form name="Datos Personales" action="alta_usuario.php" method="GET">
+                <h3>Datos Personales</h3>
+        
+                <fieldset id="sexo">
+                    <legend> Sexo</legend>
+                        <div>
+                            <input type="radio" name="sexo" value="male" >
+                            <label for="">Hombre</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="sexo" value="female">
+                            <label for="">Mujer</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="sexo" value="other" checked>
+                            <label for="">Otro</label>
+                        </div>
+                    
+                </fieldset>
+                
+                <div id="personal">
+                    <div class="datos-personales">
+                        <label for="">Nombre:</label>
+                        <input type="text" name="firstname" size="30" maxlength="15">
+                    </div>
+                    <div class="datos-personales">
+                        <label for="">1º Apellido:</label>
+                        <input type="text" name="lastname" size="27" maxlength="15">
+                    </div>
+                    <div class="datos-personales">
+                        <label for="">2º Apellido:</label>
+                        <input type="text" name="secondlastname" size="27" maxlength="15">
+                    </div>
+                </div>
+
+                <fieldset id="documento">
+                    <legend> Documento</legend>
+                        <div>
+                            <input type="radio" name="doc" value="DNI" >
+                            <label for="">DNI</label>
+                        </div>
+                        
+                        <div>
+                            <input type="radio" name="doc" value="NIE" checked>
+                            <label for="">NIE</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="doc" value="Pasaporte">
+                            <label for="">Pasaporte</label>
+                        </div>
+                    
+                </fieldset>
+        
+                
+                <h3>Datos de Nacimiento</h3>
+                
+                <div id="datos-nac">
+                    <!-- fecha de nacimiento -->
+                    <label for="">Fecha de Nacimiento
+                        <input type="date" name="" id="fecha-nac" min="2000-01-02" required>
+                        <span class="validity"></span>
+                    </label>
+
+                    <input type="text" placeholder="Lugar de nacimiento:" size="40" id="ciudad" maxlength="15">
+                </div>
+
+
+                <h3>Datos de Contacto</h3>
+
+                <div id="datos-contacto">
+                    <select name="via"  class="via" > 
+
+                        <option selected>--Elige tipo de via--</option>
+                        <option value="1">Calle</option>
+                        <option value="2">Avenida</option>
+                        <option value="3">Paseo</option>
+                        <option value="4">Rambla</option>
+                        <option value="5">Gran Via</option>
+                        <option value="6">Ronda</option>
+                        <option value="7">Otro</option>
+    
+                    </select>
+                    <div class="via">
+                        <input type="text" placeholder="Nombre via" maxlength="30" size="30">
+                        <input type="text" placeholder="Numero" maxlength="6" size="4">
+                    </div>
+
+                    <div class="via">
+                        <input type="text" placeholder="C.P." maxlength="6" size="4">
+                        <input type="text" placeholder="Localidad/Municipio" maxlength="30" size="30">
+                    </div>
+
+                    <div class="via">
+                        <input type="text" placeholder="Bloque" maxlength="6" size="3">
+                        <input type="text" placeholder="Portal" maxlength="6" size="3">
+                        <input type="text" placeholder="Escalera" maxlength="6" size="4">
+                        <input type="text" placeholder="Piso" maxlength="6" size="3">
+                        <input type="text" placeholder="Puerta" maxlength="6" size="3">
+                    </div>
+                    <div class="via">
+                        <input type="text" placeholder="C.P." maxlength="6" size="4">
+                        <input type="text" placeholder="Localidad/Municipio" maxlength="30" size="30">
+                    </div>
+                    <div class="via">
+                        <input type="tel" id="phone" name="phone" size="33" maxlength="11"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                            placeholder="Ingrese Nº movil: 658-321-456"
+                            required>
+                            <span class="validity"></span>
+
+                    </div>
+
+                    <div class="via">
+                        <input type="email" id="email" placeholder="usuario@ejemplo.com"
+                            maxlength="64" size="33"
+                            pattern=".+@globex\.com" size="30" required>
+                    </div>
+
+                    <h3>¿Como nos conociste?</h3>
+
+                    <div class="via">
+                        <textarea name="comentario" cols="38" rows="4" maxlength="100"></textarea>      
+                    </div>
+
+                    <div class="via">
+                        <input type="checkbox" name="condiciones" id="checkbox" required>
+                        <label for="">
+                            *Acepto las Condiciones Particulares, las Condiciones Generales, las Condiciones de uso del área personal, la Politica de Privacidad y la Información sobre el Derecho de Desistimiento.
+                        </label>
+                    </div>
+                    <div class="via">
+                        <input type="checkbox" name="condiciones" id="checkbox" required>
+                        <label for="">
+                            *Acepto el pago único de 30.00 €** relativo a la activación del carné de socio
+                        </label>
+                    </div>
+                    <div class="via">
+                        <input type="checkbox" name="condiciones" id="checkbox" >
+                        <label for="">
+                            El socio consiente expresamente que Espartaco GYM pueda tratar y comunicar los datos personales recabados en el ámbito del presente contrato para actividades de publicidad y marketing, incluido el envío mediante SMS, correo electrónico u otros medios similares de información comercial y/o publicitaria, relativas a los productos y servicios de las empresas del grupo Espartaco GYM, perteneciente al sector de actividades recreativas y deportivas, tales como High 5 (cadena de gimnasios), Cyberobics (productos de entrenamiento virtual), Qi² (suplementos nutricionales), LOOX (aplicaciones informáticas) y Espartaco GYM MODEL AGENCY (agencia de modelos). El presente consentimiento para actividades de publicidad y marketing es opcional para el socio y no necesario para la correcta ejecución del presente contrato. El socio podrá en cualquier momento ejercer los derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición en los términos establecidos en la Ley Orgánica 15/1999, de 13 de diciembre, y del RGPD, solicitándolo por escrito a RSG Group España, S.L.U., C/ Fuencarral 6, 3ª Planta, 28004 Madrid, o mediante correo electrónico a atencioncliente@espartacogym.com . El responsable del fichero es RSG Group España, S.L.U.
+                        </label>
+                    </div>
+
+                    <div id="button">
+                        <button>CONFIRMAR VINCULACION</button>
+                    </div>
+
+                    <div class="via">
+                        <label for="">
+                            Los horarios de apertura pueden variar de un gimnasio a otro | Puedes hacer un contrato si eres mayor de edad y eres titular de una cuenta bancaria, pásate por el gimnasio o contacta con el departamento de atención al cliente.
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+       
+</body>
+</html>

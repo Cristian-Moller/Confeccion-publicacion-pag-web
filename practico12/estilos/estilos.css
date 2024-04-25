@@ -1,0 +1,330 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#volver-atrás {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  background-color: #372246;
+  color: white;
+  height: 2vw;
+}
+
+#logo {
+  /* border: 1px solid black; */
+  width: 90%;
+  height: 8vw;
+  margin-top: 4vw;
+  -webkit-box-shadow: 5px 5px 5px blueviolet inset, -5px -5px 5px blueviolet inset;
+          box-shadow: 5px 5px 5px blueviolet inset, -5px -5px 5px blueviolet inset;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#logo #mujer {
+  /* border: 1px solid black; */
+  width: 15%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-animation-name: mujer;
+          animation-name: mujer;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#logo #nombre {
+  font-size: 3vw;
+}
+
+#logo #nombre h1 {
+  color: transparent;
+  background-color: #a217f3;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(215, 133, 240, 0.5) 25px, rgba(255, 255, 255, 0.5) 50px);
+  /* fondo con patrón rayado */
+  background-clip: text;
+  /* máscara de recorte entre el fondo y el texto */
+  -webkit-background-clip: text;
+  -webkit-animation-name: color;
+          animation-name: color;
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  background-size: 200%;
+  /* hay que ampliar el tamaño de nuestro fondo, xq estamos viendo tanto el principio como el final,
+                                     y no vamos a apreciar movimiento de ningún tipo. */
+}
+
+#logo #hombre {
+  /* border: 1px solid black; */
+  width: 15%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-animation-name: hombre;
+          animation-name: hombre;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes color {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes color {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+@-webkit-keyframes mujer {
+  0% {
+    background-image: url("/practico12/imagenes/mujer1.png");
+  }
+  10% {
+    background-image: url("/practico12/imagenes/mujer1.png");
+  }
+  20% {
+    background-image: url("/practico12/imagenes/mujer2.png");
+  }
+  40% {
+    background-image: url("/practico12/imagenes/mujer3.png");
+  }
+  60% {
+    background-image: url("/practico12/imagenes/mujer4.png");
+  }
+  80% {
+    background-image: url("/practico12/imagenes/mujer5.png");
+  }
+  100% {
+    background-image: url("/practico12/imagenes/mujer6.png");
+  }
+}
+
+@keyframes mujer {
+  0% {
+    background-image: url("/practico12/imagenes/mujer1.png");
+  }
+  10% {
+    background-image: url("/practico12/imagenes/mujer1.png");
+  }
+  20% {
+    background-image: url("/practico12/imagenes/mujer2.png");
+  }
+  40% {
+    background-image: url("/practico12/imagenes/mujer3.png");
+  }
+  60% {
+    background-image: url("/practico12/imagenes/mujer4.png");
+  }
+  80% {
+    background-image: url("/practico12/imagenes/mujer5.png");
+  }
+  100% {
+    background-image: url("/practico12/imagenes/mujer6.png");
+  }
+}
+
+@-webkit-keyframes hombre {
+  0% {
+    background-image: url("/practico12/imagenes/hombre1.png");
+  }
+  19% {
+    background-image: url("/practico12/imagenes/hombre1.png");
+  }
+  20% {
+    background-image: url("/practico12/imagenes/hombre2.png");
+  }
+  40% {
+    background-image: url("/practico12/imagenes/hombre3.png");
+  }
+  60% {
+    background-image: url("/practico12/imagenes/hombre4.png");
+  }
+  80% {
+    background-image: url("/practico12/imagenes/hombre5.png");
+  }
+  100% {
+    background-image: url("/practico12/imagenes/hombre6.png");
+  }
+}
+
+@keyframes hombre {
+  0% {
+    background-image: url("/practico12/imagenes/hombre1.png");
+  }
+  19% {
+    background-image: url("/practico12/imagenes/hombre1.png");
+  }
+  20% {
+    background-image: url("/practico12/imagenes/hombre2.png");
+  }
+  40% {
+    background-image: url("/practico12/imagenes/hombre3.png");
+  }
+  60% {
+    background-image: url("/practico12/imagenes/hombre4.png");
+  }
+  80% {
+    background-image: url("/practico12/imagenes/hombre5.png");
+  }
+  100% {
+    background-image: url("/practico12/imagenes/hombre6.png");
+  }
+}
+
+#cliente {
+  border: 1px solid black;
+  width: 90%;
+  height: auto;
+  margin-bottom: 2vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#cliente h2 {
+  border: 1px solid black;
+  width: 50%;
+  height: 3vw;
+  margin-top: 1vw;
+  text-align: center;
+}
+
+#cliente #formulario {
+  border: 1px solid black;
+  width: 50%;
+  height: auto;
+  margin-top: 1vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#cliente #formulario h3 {
+  margin-top: 1vw;
+}
+
+#cliente #formulario form {
+  border: 1px solid black;
+  width: 60%;
+}
+
+#cliente #formulario form #sexo, #cliente #formulario form #documento {
+  width: 70%;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1vw;
+}
+
+#cliente #formulario form #personal {
+  /* border: 1px solid black; */
+  width: 100%;
+}
+
+#cliente #formulario form #personal .datos-personales {
+  /* border: 1px solid black; */
+  text-align: start;
+  margin-top: 1vw;
+}
+
+#cliente #formulario #datos-nac {
+  margin-top: 1vw;
+}
+
+#cliente #formulario #datos-nac #fecha-nac:invalid + span::after {
+  content: "✖";
+  color: red;
+}
+
+#cliente #formulario #datos-nac #fecha-nac:valid + span::after {
+  content: "✓";
+  color: green;
+  font-weight: bold;
+}
+
+#cliente #formulario #datos-nac #ciudad {
+  margin-top: 1vw;
+}
+
+#cliente #formulario #datos-contacto .via {
+  margin-top: 1vw;
+  text-align: justify;
+  font-family: monospace;
+}
+
+#cliente #formulario #datos-contacto input:invalid + span:after {
+  position: absolute;
+  content: '✖';
+  padding-left: 5px;
+  color: red;
+}
+
+#cliente #formulario #datos-contacto input:valid + span:after {
+  position: absolute;
+  content: '✓';
+  padding-left: 5px;
+  color: green;
+}
+
+#cliente #formulario #button {
+  margin-top: 1vw;
+  text-align: center;
+}
+
+#cliente #formulario #button button {
+  height: 4vw;
+  font-weight: bold;
+  background-color: yellow;
+}
+/*# sourceMappingURL=estilos.css.map */

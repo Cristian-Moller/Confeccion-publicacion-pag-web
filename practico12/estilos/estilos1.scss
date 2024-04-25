@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin-top: 4vw;
+}
+#logo{
+    background-color: black;
+    /* border: 1px solid black; */
+    width: 80%;
+    height: 15vw;
+    margin-left: 10%;
+    display: inline-flex;
+
+    #caja-logo{
+        /* border: 1px solid black; */
+        width: 35%;
+        height: 15vw;
+       
+        #empresa{
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 29%;
+            
+            h1{
+                /* background-color: black; */
+                height: 100%;
+                width: 100%;
+                font-size: 3vw;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                
+                #Alquileres{
+                    animation-name: logo-empresa;
+                    animation-duration: 4s;
+                    animation-iteration-count: infinite;
+
+                }
+                #Mc{
+                    animation-name: logo-empresa;
+                    animation-duration: 5s;
+                    animation-iteration-count: infinite;
+                }
+                #Queen{
+                    animation-name: logo-empresa;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite;
+                }
+            }
+
+        }
+        #icono-logo{
+            background-color: black;
+            /* border: 1px solid black; */
+            width: 70%;
+            height: 69%;
+            margin-left: 15%;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                animation-name: foto-logo;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+        }
+    }
+    #caja-animacion{
+        /* border: 1px solid black; */
+        width: 65%;
+        height: 15vw;
+        display: flex;
+        
+        .cajas{
+            flex-grow: 1;
+        }
+        #caja1{
+           /*  border: 1px solid black; */
+            background-image: url('/practico12/imagenes/auto-neon.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            width: 20%;
+            height: 100%;
+            animation-name: logo-animacion;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            
+            
+        }
+        #caja2{
+            /* border: 1px solid black; */
+            background-image: url('/practico12/imagenes/auto-neon.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            width: 20%;
+            height: 100%;
+            animation-name: logo-animacion1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        #caja3{
+            /* border: 1px solid black; */
+            background-image: url('/practico12/imagenes/auto-neon.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            width: 20%;
+            height: 100%;
+            animation-name: logo-animacion2;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+    }
+    
+}
+
+@keyframes logo-empresa{
+    0%{
+        color: chartreuse;
+        text-shadow: 0 0 0.2em chartreuse, 
+                    0 0 0.2em chartreuse,
+                    0 0 0.2em chartreuse;
+       
+    }
+    25%{
+        color: #bc3af8;
+        text-shadow: 0 0 0.2em #87F,
+                    0 0 0.2em #87F,
+                    0 0 0.2em #87F;
+        
+    }
+    50%{
+        color: rgb(13, 236, 206);
+        text-shadow: 0 0 0.2em rgb(89, 238, 218), 
+                    0 0 0.2em rgb(89, 238, 218),
+                    0 0 0.2em rgb(89, 238, 218);
+        
+    }
+    75%{
+        color: rgb(241, 245, 17);
+        text-shadow: 0 0 0.2em rgb(244, 247, 89), 
+                    0 0 0.2em rgb(244, 247, 89),
+                    0 0 0.2em rgb(244, 247, 89);
+    }
+    100%{
+        color: rgb(229, 13, 236);
+        text-shadow: 0 0 0.2em rgb(229, 112, 233), 
+                    0 0 0.2em rgb(229, 112, 233),
+                    0 0 0.2em rgb(229, 112, 233);
+       
+    }
+}
+@keyframes foto-logo{
+    0%{
+        opacity: 0.5;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    75%{
+        opacity: 1;        
+    }
+    
+    100%{
+        opacity: 0.3;
+       
+    }
+}
+@keyframes logo-animacion{
+    0%{
+        background-image: url('/practico12/imagenes/corazon-neon.png');
+    }
+    20%{
+        background-image: url('/practico12/imagenes/labios-neon.png');
+    }
+    40%{
+        background-image: url('/practico12/imagenes/rey-neon.png');
+    }
+    60%{
+        background-image: url('/practico12/imagenes/latido.png');
+    }
+    80%{
+        background-image: url('/practico12/imagenes/comida-neon.png');
+       
+    }
+    100%{
+        background-image: url('/practico12/imagenes/helado-neon.png');
+       
+    }
+}
+@keyframes logo-animacion1{
+    0%{
+        background-image: url('/practico12/imagenes/auto-neon.png');
+    }
+    40%{
+        background-image: url('/practico12/imagenes/auto-neon1.png');
+    }
+    55%{
+        background-image: url('/practico12/imagenes/radio-neon.png');
+    }
+    80%{
+        background-image: url('/practico12/imagenes/auto-neon3.png');
+    }
+    100%{
+        background-image: url('/practico12/imagenes/auto-neon2.png');
+       
+    }
+}
+@keyframes logo-animacion2{
+    0%{
+        background-image: url('/practico12/imagenes/hola-neon.png');
+    }
+    20%{
+        background-image: url('/practico12/imagenes/cactus-neon.png');
+    }
+    40%{
+        background-image: url('/practico12/imagenes/sol-neon.png');
+    }
+    60%{
+        background-image: url('/practico12/imagenes/surf-neon.png');
+    }
+    80%{
+        background-image: url('/practico12/imagenes/nube-neon.png');
+       
+    }
+    100%{
+        background-image: url('/practico12/imagenes/nube-neon1.png');
+       
+    }
+}
+
+#caja-fondo-formulario{
+    border: 1px solid black;
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 1vw;
+
+    h2{
+        text-align: center;
+        font-weight: bold;
+        font-size: 2vw;
+    }
+    h3{
+        text-align: center;
+        font-weight: bold;
+        margin-top: 1vw;
+    }
+
+    .sin-borde{
+        border: 0;
+        border-bottom: 2px dotted black;
+    }
+    p{
+        margin-top: 1vw;
+        text-align: justify;
+
+    }
+    #tres-3{
+        list-style-type: none;
+
+        li{
+            margin-left: 2vw;
+        }
+    }
+    #cuatro-4{
+        list-style-type: none;
+        margin-left: -2.45vw;
+
+        li{
+            margin-left: 0;
+        }
+    }
+    #sector-firmas{
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-around;
+    }
+    .caja-firma{
+        width: 50%;
+        height: auto;
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        
+    }
+    /* .firma{
+        border: 0;
+
+    } */
+    #caja-anexo{
+        border: 1px solid black;
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        margin-bottom: 4vh;
+
+        #caja1{
+            border: 1px solid black;
+            width: 100%;
+            height: 19vh;
+            display: inline-flex;
+
+            >div{
+                border: 1px solid black;
+                width: 50%;
+                height: 100%;
+            }
+            h4{
+                margin-bottom: 1vw;
+            }
+        }
+        #caja2{
+            border: 1px solid black;
+            width: 100%;
+            height: 27vh;
+            display: inline-flex;
+
+            >div{
+                border: 1px solid black;
+                width: 50%;
+                height: 100%;
+            }
+            h4{
+                margin-bottom: 1vw;
+            }
+        }
+        #caja3{
+            border: 1px solid black;
+            width: 100%;
+            height: 16vh;
+            display: inline-flex;
+
+            >div{
+                width: 50%;
+                height: 100%;
+            }
+            h4{
+                margin-bottom: 1vw;
+            }
+        }
+        #caja4{
+            border: 1px solid black;
+            width: 100%;
+            height: 16vh;
+            display: inline-flex;
+
+            h4{
+                margin-bottom: 1vw;
+            }
+        }
+        #caja5{
+            border: 1px solid black;
+            width: 100%;
+            height: 14vh;
+            display: inline-flex;
+
+            >div{
+                border: 1px solid black;
+                width: 50%;
+                height: 100%;
+            }
+            h4{
+                margin-bottom: 1vw;
+            }
+        }
+        #caja6{
+            border: 1px solid black;
+            width: 100%;
+            height: 25vh;
+            display: inline-flex;
+
+            h4{
+                margin-bottom: 1vw;
+            }
+            >div div label{
+                margin-left: 4vw;
+            }
+            >div div input{
+                margin-left: 4vw;
+            }
+        }
+        #caja7{
+            border: 1px solid black;
+            width: 100%;
+            height: 24.5vh;
+            
+            h4{
+                margin-bottom: 1vw;
+            }
+            #observaciones{
+                border: 0;
+            }
+            
+        }
+        #caja8{
+            border: 1px solid black;
+            width: 100%;
+            height: 30vh;
+            display: inline-flex;
+
+            >div{
+                border: 1px solid black;
+                width: 50%;
+                height: 100%;
+            }
+            h4{
+                margin-bottom: 1vw;
+            }
+            #precio-total{
+                margin-left: 5vw;
+            }
+            #firma{
+                margin-top: 1vw;
+            }
+        }
+        
+
+    }
+    
+}

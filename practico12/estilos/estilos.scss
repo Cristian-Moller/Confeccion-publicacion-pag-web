@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#volver-atrás{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+}
+#logo{
+    /* border: 1px solid black; */
+    width: 90%;
+    height: 8vw;
+    margin-top: 4vw;
+    box-shadow: 5px 5px 5px blueviolet inset,
+                -5px -5px 5px blueviolet inset;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    #mujer{
+        /* border: 1px solid black; */
+        width: 15%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        animation-name: mujer;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }    
+    #nombre{
+        font-size: 3vw;
+        h1{
+            color: transparent;
+            background-color: #a217f3;
+            background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, 
+                                                    rgba(215, 133, 240, 0.5) 25px, 
+                                                    rgba(255,255,255,.5) 50px); /* fondo con patrón rayado */
+            background-clip: text;     /* máscara de recorte entre el fondo y el texto */
+            -webkit-background-clip: text;
+
+            animation-name: color;
+            animation-duration: 50s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            background-size: 200%;  /* hay que ampliar el tamaño de nuestro fondo, xq estamos viendo tanto el principio como el final,
+                                     y no vamos a apreciar movimiento de ningún tipo. */
+        }    
+    }
+    #hombre{
+        /* border: 1px solid black; */
+        width: 15%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        animation-name: hombre;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }    
+}
+
+@keyframes color {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
+@keyframes mujer {
+    0%{
+        background-image: url('/practico12/imagenes/mujer1.png');
+    }
+    10%{
+        background-image: url('/practico12/imagenes/mujer1.png');
+    }
+    20%{
+        background-image: url('/practico12/imagenes/mujer2.png');
+    }
+    40%{
+        background-image: url('/practico12/imagenes/mujer3.png');
+    }
+    60%{
+        background-image: url('/practico12/imagenes/mujer4.png');
+    }
+    80%{
+        background-image: url('/practico12/imagenes/mujer5.png');
+    }
+    100%{
+        background-image: url('/practico12/imagenes/mujer6.png');
+    }
+}
+@keyframes hombre {
+    0%{
+        background-image: url('/practico12/imagenes/hombre1.png');
+    }
+    19%{
+        background-image: url('/practico12/imagenes/hombre1.png');
+    }
+    20%{
+        background-image: url('/practico12/imagenes/hombre2.png');
+    }
+    40%{
+        background-image: url('/practico12/imagenes/hombre3.png');
+    }
+    60%{
+        background-image: url('/practico12/imagenes/hombre4.png');
+    }
+    80%{
+        background-image: url('/practico12/imagenes/hombre5.png');
+    }
+    100%{
+        background-image: url('/practico12/imagenes/hombre6.png');
+    }
+}
+
+#cliente{
+    border: 1px solid black;
+    width: 90%;
+    height: auto;
+    margin-bottom: 2vw;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    h2{
+        border: 1px solid black;
+        width: 50%;
+        height: 3vw;
+        margin-top: 1vw;
+        text-align: center;
+    }
+    #formulario{
+        border: 1px solid black;
+        width: 50%;
+        height: auto;
+        margin-top: 1vw;
+        display: inline-flex;
+        justify-content: center;
+
+        h3{
+            margin-top: 1vw;
+        }
+        
+        form{
+            border: 1px solid black;
+            width: 60%;
+            
+            #sexo, #documento{
+                width: 70%;
+                text-align: center;
+                display: inline-flex;
+                justify-content: space-around;
+                margin-top: 1vw;
+                
+            }
+    
+            #personal{
+                /* border: 1px solid black; */
+                width: 100%;
+                
+    
+                .datos-personales{
+                    /* border: 1px solid black; */
+                    text-align: start;
+                    margin-top: 1vw;
+                }
+            }
+        }
+
+        #datos-nac{
+            margin-top: 1vw;
+            
+            #fecha-nac:invalid + span::after {
+                content: "✖";
+                color: red;
+            }
+              
+            #fecha-nac:valid + span::after {
+                content: "✓";
+                color: green;
+                font-weight: bold;
+            }
+
+            #ciudad{
+                margin-top: 1vw;
+            }
+
+        }
+
+        #datos-contacto{
+
+            .via{
+                margin-top: 1vw;
+                text-align: justify;
+                font-family: monospace;
+            }
+
+            input:invalid+span:after {
+                position: absolute; 
+                content: '✖';
+                padding-left: 5px;
+                color: red;
+              }
+              
+              input:valid+span:after {
+                position: absolute;
+                content: '✓';
+                padding-left: 5px;
+                color: green;
+              }
+        }
+
+        #button{
+            margin-top: 1vw;
+            text-align: center;
+            button{
+                height: 4vw;
+                font-weight: bold;
+                background-color: yellow;
+            }
+        }
+
+    }
+}
