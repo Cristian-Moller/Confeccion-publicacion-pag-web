@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="media_css/estilos_media2.css">
+    <title>Media 2</title>
+</head>
+<body>
+
+    <a href="../"><input id="volver-atrás" type="button" name="volver atrás" value="VOLVER ATRÁS"></input></a>
+    
+    <header>
+        <div id="titulo">
+            <h1>Movies</h1>
+        </div>
+        <div id="lista-peliculas">
+            <div>
+                <div class="peliculas">Lightyear</div>
+                <div class="peliculas">Blacklight</div>
+                <div class="peliculas">Scream</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="detalle-peli">
+            <div class="titulo">Lightyear</div>
+            <div class="sinopsis">
+                Uno de los juguetes más conocidos del cine por fin tendrá la historia de su origen. En 'Toy Story' vimos como Andy conseguía por fin uno de los muñecos más codiciados: un Buzz Lightyear. Ahora, Pixar, casa de Woody y los demás, presenta la película sobre el personaje que inspiró ese juguete. Chris Evans presta su voz al cadete espacial en su primera aventura para el cine. 'Lightyear' está dirigida por Angus MacLane, co-director de 'Buscando a Dory'.</div>
+            <div class="imagen">
+                <div>
+                    <img src="imagenes/lightyear.jpg" alt="">
+                </div>
+            </div>
+            <div class="mas-info">
+                <a href="https://www.ecartelera.com/peliculas/lightyear/" target="_blank">Más Informacion</a>
+            </div>
+        </div>
+        <div class="detalle-peli">
+            <div class="titulo">Blacklight</div>
+            <div class="sinopsis">
+                Travis Block, un agente del gobierno en la sombra que se especializa en eliminar operativos cuyas coberturas han sido expuestas, descubre una conspiración mortal dentro de sus propias filas que alcanza los niveles más altos del poder.
+            </div>
+            <div class="imagen">
+                <div>
+                    <img src="imagenes/blacklight.jpg" alt="">
+                </div>
+            </div>
+            <div class="mas-info">
+                <a href="https://www.filmaffinity.com/pe/film157744.html" target="_blank">Más Informacion</a>
+            </div>
+        </div>
+        <div class="detalle-peli">
+            <div class="titulo">Scream</div>
+            <div class="sinopsis">
+                Veinticinco años después de que una serie de brutales asesinatos conmocionara al tranquilo pueblo de Woodsboro, un nuevo asesino se ha puesto la máscara de Ghostface y comienza a perseguir a un grupo de adolescentes para resucitar los secretos del mortífero pasado del pueblo.
+            </div>
+            <div class="imagen">
+                <div>
+                    <img src="imagenes/scream.jpg" alt="">
+                </div>
+            </div>
+            <div class="mas-info">
+                <a href="https://www.filmaffinity.com/pe/film738775.html" target="_blank">Más Informacion</a>
+            </div>
+        </div>
+
+        <div></div>
+
+        <div class="formularios">
+            <form action="/action_page.php">
+                <label for="" id="registro">Registrate para obtener más información</label><br><br>
+
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Indica aquí tu nombre: "><br><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" placeholder="ejemplo@email.com"><br><br>
+
+                <fieldset>
+                    <legend>Genero Favorito</legend>
+
+                    <input class="genero" type="radio" id="comedia" name="fav_language" value="comedia">
+                    <label class="genero" for="comedia">Comedia</label>
+                    <input class="genero" type="radio" id="accion" name="fav_language" value="accion">
+                    <label class="genero" for="accion">Acción</label>
+                    <input class="genero" type="radio" id="terror" name="fav_language" value="terror">
+                    <label class="genero" for="terror">Terror</label>
+                </fieldset><br>
+                
+                <input type="button" id="button" value="Enviar">
+            </form>
+        </div>
+        <div class="formularios" id="formulario2">
+            <form action="/action_page.php">
+                <label for="" id="datos">Datos sobre las películas</label><br><br>
+
+                <table>
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Estreno</th>
+                        <th>Género</th>
+                    </tr>
+
+                    <tr>
+                        <td>Lightyear</td>
+                        <td>17 Junio 2022</td>
+                        <td>Animación</td>
+                    </tr>
+                    <tr>
+                        <td>Blacklight</td>
+                        <td>10 febrero 2022</td>
+                        <td>Acción</td>
+                    </tr>
+                    <tr>
+                        <td>Scream</td>
+                        <td>14 enero 2022</td>
+                        <td>Terror</td>
+                    </tr>
+                    
+                </table>
+                              
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div>
+            &#169; Moller Cristian
+        </div>
+    </footer>
+</body>
+</html>
