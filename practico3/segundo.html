@@ -42,15 +42,14 @@
             text-align: justify;
             margin-right: 5%;
         }
-        
-        
         .icono{
-            width: 15px; 
-            height: 20px;
+            width: 25px; 
+            height: 30px;
         }
         i{
             width: 14px;
             height: 1%;
+            margin-left: 8px;
         }
         #sublista>li{
             list-style-type: square;
@@ -61,9 +60,14 @@
 <body style="text-align: center;">
 
     <h1>Red Hot Chili Peppers</h1>
-    <a href="/practico3/index.html"><div class="glyphicon glyphicon-home" style="display: flex; margin-left: 5%;"></div></a>
+    <a href="/practico3/index.html">
+        <div class="glyphicon glyphicon-home" style="display: flex; margin-left: 5%; font-size: x-large;"></div>
+    </a>
 
-    <nav id="navegador" style="border: 2px solid blue; text-align: center; width: 50%; height: 100%; margin-left: 20%; margin-bottom: 2%;">
+    <nav 
+        id="navegador" 
+        style="border: 2px solid blue; text-align: center; width: 60%; height: 100%; margin-left: 20%; margin-bottom: 2%; font-size: large;"
+    >
         <span><a href="#historia">Historia</a></span>
         <span><a href="#fotografias">Fotografias</a></span>
         <span><a href="#integrantes">Integrantes</a></span>
@@ -78,7 +82,7 @@
             <a href="#navegador" class="icono"> 
                 <i class="glyphicon glyphicon-circle-arrow-up" style="width: 100%; height: 100%;"></i>
             </a>
-            <div>
+            <div style="margin-top: 20px;">
                 <p>
                     El núcleo de la banda fue formado en la preparatoria Fairfax High School como Anthym con el chileno Alain Johannes como vocalista. Anthony Kiedis, quien estuvo haciendo una pequeña carrera como actor juvenil televisivo bajo el apodo de Cole Dammett, solía ser su presentador y "hypeman". En febrero de 1983, Anthony fue pedido por su amigo Gary Allen de la banda Neighbour's Voices para que lo teloneara junto a sus amigos.
                 </p>
@@ -105,9 +109,7 @@
                 <p>
                     En 1986 compusieron para la película Tough Guys20​ el tema "Set It Straight", que todavía no ha sido publicado en ningún álbum. En una escena del filme se puede ver a Anthony Kiedis, Flea, Hillel Slovak y Cliff Martinez tocando parte de este tema. Ese mismo año también colaboraron en el tema "Reputation" para el álbum de Andre Foxxe I'm Funk And I'm Proud.​
                 </p>
-
             </div>
-
         </li>
         <li id="fotografias" class="lista-principal">Fotografias
             <a href="#navegador">
@@ -127,7 +129,6 @@
                 <span class="fotoqueen">
                     <img src="imagenes/red-hot4.png" alt="">
                 </span>
-                                
             </div>
         </li>
         <li id="integrantes" class="lista-principal">Integrantes
@@ -135,7 +136,7 @@
                 <i class="glyphicon glyphicon-circle-arrow-up"></i>
             </a>
 
-            <div style="display: flex; flex-direction: column;">
+            <div style="display: flex; flex-direction: column; margin-top: 20px;">
                 
                 <p style="text-align: left; margin-left: -3%;">
                     <span style="width: 100%; height: 100%; margin: 1%;">
@@ -143,14 +144,13 @@
                     </span>
                 </p>
             </div>
-
         </li>
         <li id="discografia" class="lista-principal">Discografia
             <a href="#navegador">
                 <i class="glyphicon glyphicon-circle-arrow-up"></i>
             </a>
 
-            <div>
+            <div style="margin-top: 20px;">
                 <ul style="list-style-type: square;"> 
                     <li>The Red Hot Chili Peppers (1984)</li>
                     <li>Freaky Styley (1985)</li>
@@ -166,14 +166,13 @@
                     <li>Unlimited Love (2022)</li>
                 </ul>
             </div>
-
         </li>
         <li id="giras" class="lista-principal">Giras
             <a href="#navegador">
                 <i class="glyphicon glyphicon-circle-arrow-up"></i>
             </a>
 
-            <div>
+            <div style="margin-top: 20px;">
                 <h3>FECHAS RED HOT CHILI PEPPERS 2022 WORLD TOUR</h3>
                 <ul>
                     <li>Europa
@@ -218,30 +217,38 @@
                     </li>
                 </ul>
             </div>
-
-
         </li>
         <li id="video" class="lista-principal">Video
             <a href="#navegador">
                 <i class="glyphicon glyphicon-circle-arrow-up"></i>
             </a>
 
-            <iframe width="640" height="480" src="https://www.youtube.com/embed/OS8taasZl8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+            <div style="margin-top: 20px;">
+                <iframe 
+                    width="640" 
+                    height="480"
+                    src="https://www.youtube.com/embed/OS8taasZl8k"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
         </li>
         <li id="sitioweb" class="lista-principal">Sitio Web
             <a href="#navegador">
                 <i class="glyphicon glyphicon-circle-arrow-up"></i>
             </a>
-            <div style="display: flex; flex-direction: column;">
-                <a href="https://redhotchilipeppers.com/">Red_Hot_Chili_Peppers Citio Oficial</a>
+            <div style="display: flex; flex-direction: column; margin-top: 20px;">
+                <a href="https://redhotchilipeppers.com/" style="font-size: large;">Red_Hot_Chili_Peppers Citio Oficial</a>
             
-                <a href="https://es.wikipedia.org/wiki/Red_Hot_Chili_Peppers">Red_Hot_Chili_Peppers Wikipedia</a>
+                <a href="https://es.wikipedia.org/wiki/Red_Hot_Chili_Peppers" style="font-size: large;" >Red_Hot_Chili_Peppers Wikipedia</a>
             </div>
         </li>
     </ul>
-    <a href="/practico3/index.html"><div class="glyphicon glyphicon-home" style="display: flex; margin: 5%;"></div></a>
-
+    <a href="/practico3/index.html">
+        <div class="glyphicon glyphicon-home" style="display: flex; margin: 5%; font-size: x-large;"></div>
+    </a>
 
 </body>
 </html>

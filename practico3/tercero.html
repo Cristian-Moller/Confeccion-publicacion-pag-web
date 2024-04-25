@@ -42,15 +42,14 @@
             text-align: justify;
             margin-right: 5%;
         }
-        
-        
         .icono{
-            width: 15px; 
-            height: 20px;
+            width: 25px; 
+            height: 30px;
         }
         i{
             width: 14px;
             height: 1%;
+            margin-left: 8px;
         }
         #sublista>li{
             list-style-type: square;
@@ -61,9 +60,14 @@
 <body style="text-align: center;">
 
     <h1>No Te Va Gustar</h1>
-    <a href="/practico3/index.html"><div class="glyphicon glyphicon-home" style="display: flex; margin-left: 5%;"></div></a>
+    <a href="/practico3/index.html">
+        <div class="glyphicon glyphicon-home" style="display: flex; margin-left: 5%; font-size: x-large;"></div>
+    </a>
 
-    <nav id="navegador" style="border: 2px solid blue; text-align: center; width: 50%; height: 100%; margin-left: 20%; margin-bottom: 2%;">
+    <nav 
+        id="navegador"
+        style="border: 2px solid blue; text-align: center; width: 60%; height: 100%; margin-left: 20%; margin-bottom: 2%; font-size: large;"
+    >
         <span><a href="#historia">Historia</a></span>
         <span><a href="#fotografias">Fotografias</a></span>
         <span><a href="#integrantes">Integrantes</a></span>
@@ -78,7 +82,7 @@
             <a href="#navegador" class="icono"> 
                 <i class="glyphicon glyphicon-circle-arrow-up" style="width: 100%; height: 100%;"></i>
             </a>
-            <div>
+            <div style="margin-top: 20px;">
                 <p>
                     No Te Va Gustar se formó en 1994, con la mayoría de sus miembros alrededor de los 16 años. La banda empezó con un cuarteto compuesto por Emiliano Brancciari (voz y guitarra), Gonzalo Castex (percusión), Mateo Moreno (bajo) y Pablo Abdala (batería). En 1996 se sumaron Pamela Retamoza (saxofón), Emiliano García (saxo) y Santiago Svirsky (trombón). Unos meses después se integró Martín Gil (trompeta). En 1997, la banda agregó otros estilos musicales tales como reggae, ska y murga.
                 </p>
@@ -109,7 +113,6 @@
                     El 2008 arrancó el 5 de abril en el Estadio River Plate con el Quilmes Rock, donde compartieron escenario con Guasones, Los Ratones Paranoicos, Las Pelotas y Los Piojos. Posteriormente ofrecieron tres recitales en el Teatro de Verano de Montevideo, el 11, 12 y 13 de abril, y luego tocaron por primera vez en el Luna Park de Buenos Aires, el 12 de junio. Estos no fueron los únicos recitales multitudinarios de No Te Va Gustar en el año, ya que el 6 de septiembre tocaron ante 7 000 personas en el Malvinas Argentinas (Microestadio AAAJ) de Buenos Aires, y el 11 de octubre realizaron junto a La Vela Puerca un concierto histórico en el Estadio Charrúa ante más de 23 000 personas, en el que en algunos momentos del recital estaban las dos bandas tocando a la vez en el escenario. El 22 de ese mes, sacaron su quinto álbum de estudio llamado El camino más largo, grabado en Elefante Blanco (Montevideo) entre mayo y agosto del mismo año.
                 </p>
             </div>
-
         </li>
         <li id="fotografias" class="lista-principal">Fotografias
             <a href="#navegador">
@@ -145,14 +148,13 @@
                     </span>
                 </p>
             </div>
-
         </li>
         <li id="discografia" class="lista-principal">Discografia
             <a href="#navegador">
                 <i class="glyphicon glyphicon-circle-arrow-up"></i>
             </a>
 
-            <div>
+            <div style="margin-top: 20px;">
                 <ul style="list-style-type: square;"> 
                     <li>1999: Sólo de noche</li>
                     <li>2002: Este fuerte viento que sopla</li>
@@ -167,14 +169,13 @@
                     <li>2021: Luz</li>
                 </ul>
             </div>
-
         </li>
         <li id="giras" class="lista-principal">Giras
             <a href="#navegador">
                 <i class="glyphicon glyphicon-circle-arrow-up"></i>
             </a>
 
-            <div>
+            <div style="margin-top: 20px;">
                 <ul>
                    <li>1.	"Tour Solo de noche"	Sólo de noche	12/02/2000-20/01/2002</li>
                    <li>2.	"La Única Voz Tour"	Este fuerte viento que sopla	12/10/2002-13/07/2004</li>
@@ -189,30 +190,38 @@
                    <li>11.	"Luz Tour"	Luz	13/12/2021-presente</li>
                 </ul>
             </div>
-
-
         </li>
         <li id="video" class="lista-principal">Video
             <a href="#navegador">
                 <i class="glyphicon glyphicon-circle-arrow-up"></i>
             </a>
 
-            <iframe width="640" height="480" src="https://www.youtube.com/embed/luSePvNlPZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div style="margin-top: 20px;">
+                <iframe
+                    width="640"
+                    height="480" src="https://www.youtube.com/embed/luSePvNlPZw"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
 
         </li>
         <li id="sitioweb" class="lista-principal">Sitio Web
             <a href="#navegador">
                 <i class="glyphicon glyphicon-circle-arrow-up"></i>
             </a>
-            <div style="display: flex; flex-direction: column;">
-                <a href="https://www.notevagustar.com/">No_Te_Va_Gustar Citio Oficial</a>
+            <div style="display: flex; flex-direction: column; margin-top: 20px;">
+                <a href="https://www.notevagustar.com/" style="font-size: large;">No_Te_Va_Gustar Citio Oficial</a>
             
-                <a href="https://es.wikipedia.org/wiki/No_Te_Va_Gustar">No_Te_Va_Gustar Wikipedia</a>
+                <a href="https://es.wikipedia.org/wiki/No_Te_Va_Gustar" style="font-size: large;" >No_Te_Va_Gustar Wikipedia</a>
             </div>
         </li>
     </ul>
-    <a href="/practico3/index.html"><div class="glyphicon glyphicon-home" style="display: flex; margin: 5%;"></div></a>
-
+    <a href="/practico3/index.html">
+        <div class="glyphicon glyphicon-home" style="display: flex; margin: 5%; font-size: x-large;"></div>
+    </a>
 
 </body>
 </html>

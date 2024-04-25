@@ -56,12 +56,14 @@
             margin: 1%;
         }
         .icono{
-            width: 15px; 
-            height: 20px;
+            width: 25px; 
+            height: 30px;
         }
         i{
-            width: 14px;
+            width: 20px;
+            height: 25px;
             height: 1%;
+            margin-left: 8px;
         }
         #sublista>li{
             list-style-type: square;
@@ -72,9 +74,14 @@
 <body style="text-align: center;">
 
     <h1>Queen</h1>
-    <a href="/practico3/index.html"><div class="glyphicon glyphicon-home" style="display: flex; margin-left: 5%;"></div></a>
+    <a href="/practico3/index.html">
+        <div class="glyphicon glyphicon-home" style="display: flex; margin-left: 5%; font-size: x-large;"></div>
+    </a>
 
-    <nav id="navegador" style="border: 2px solid blue; text-align: center; width: 50%; height: 100%; margin-left: 20%; margin-bottom: 2%;">
+    <nav 
+        id="navegador" 
+        style="border: 2px solid blue; text-align: center; width: 60%; height: 100%; margin-left: 20%; margin-bottom: 2%; font-size: large;"
+    >
         <span><a href="#historia">Historia</a></span>
         <span><a href="#fotografias">Fotografias</a></span>
         <span><a href="#integrantes">Integrantes</a></span>
@@ -87,9 +94,9 @@
     <ul>
         <li id="historia" class="lista-principal"> Historia
             <a href="#navegador" class="icono"> 
-                <i class="glyphicon glyphicon-circle-arrow-up" style="width: 100%; height: 100%;"></i>
+                <i class="glyphicon glyphicon-circle-arrow-up"></i>
             </a>
-            <div>
+            <div style="margin-top: 20px;" >
                <h3> Años formativos en Smile y cambio de nombre a Queen (1968-1971)</h3>
                 <p>
                     En 1968 el guitarrista Brian May y el baterista Roger Taylor se unieron con el cantante Tim Staffell conformando así el conjunto Smile, un grupo de hard rock psicodélico. En esta etapa, May ya usaba su guitarra Red Special, la cual había construido junto a su padre a los 16 años. Smile firmó con Mercury Records en 1969, y tuvo su primera sesión de grabación en los Trident Studios ese año. Staffell estudiaba en Ealing Art College con Freddie Mercury, a quien presentó a la banda. Mercury, que para entonces había integrado formaciones como Ibex, Wreckage o Sour Milk Sea, era un acérrimo fanático del grupo. En abril de 1970, Staffell abandonó Smile para unirse a otra banda, Humpy Bong. May y Taylor decidieron contactar entonces con Mercury para que fuese el nuevo cantante.
@@ -117,7 +124,6 @@
                     Terry Yeadon, un amigo de Brian May, estaba estableciendo un nuevo complejo de estudios en Wembley perteneciente a De Lane Lea Studios. El estudio necesitaba músicos para probar los nuevos equipos, así que May fue con Queen a probarlo. Allí realizaron sus primeros registros, los cuales fueron "Liar", "Keep Yourself Alive", "The Night Comes Down" y "Jesus", en 1971. Con estos demos el grupo empezó a buscar casas discográficas que estuviesen interesadas en su trabajo, pero ninguna se mostró interesada en un primer momento.
                 </p>
             </div>
-
         </li>
         <li id="fotografias" class="lista-principal">Fotografias
             <a href="#navegador">
@@ -143,7 +149,6 @@
                 <span class="fotoqueen">
                     <img src="imagenes/queen-fredy2.jpg" alt="">
                 </span>
-                
             </div>
         </li>
         <li id="integrantes" class="lista-principal">Integrantes
@@ -161,14 +166,13 @@
                     </span>
                 </p>
             </div>
-
         </li>
         <li id="discografia" class="lista-principal">Discografia
             <a href="#navegador">
                 <i class="glyphicon glyphicon-circle-arrow-up"></i>
             </a>
 
-            <div>
+            <div style="margin-top: 20px;" >
                 <ul style="list-style-type: square;"> 
                     <li>1973: Queen</li>
                     <li>1974: Queen II</li>
@@ -187,14 +191,13 @@
                     <li>1995: Made in Heaven</li>
                 </ul>
             </div>
-
         </li>
         <li id="giras" class="lista-principal">Giras
             <a href="#navegador">
                 <i class="glyphicon glyphicon-circle-arrow-up"></i>
             </a>
 
-            <div>
+            <div style="margin-top: 20px;">
                 <ul>
                     <li>1973
                         <ul>
@@ -238,30 +241,38 @@
                     </li>
                 </ul>
             </div>
-
-
         </li>
         <li id="video" class="lista-principal">Video
             <a href="#navegador">
                 <i class="glyphicon glyphicon-circle-arrow-up"></i>
             </a>
 
-            <iframe width="640" height="480" src="https://www.youtube.com/embed/NwMpKMQh1rI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+            <div style="margin-top: 20px;">
+                <iframe 
+                    width="640"
+                    height="480"
+                    src="https://www.youtube.com/embed/NwMpKMQh1rI"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
         </li>
         <li id="sitioweb" class="lista-principal">Sitio Web
             <a href="#navegador">
                 <i class="glyphicon glyphicon-circle-arrow-up"></i>
             </a>
-            <div style="display: flex; flex-direction: column;">
-                <a href="https://www.queenonline.com/es">Queen Citio Oficial</a>
+            <div style="display: flex; flex-direction: column; margin-top: 20px;">
+                <a href="https://www.queenonline.com/es" style="font-size: large;" >Queen Citio Oficial</a>
             
-                <a href="https://es.wikipedia.org/wiki/Queen">Queen Wikipedia</a>
+                <a href="https://es.wikipedia.org/wiki/Queen" style="font-size: large;" >Queen Wikipedia</a>
             </div>
         </li>
     </ul>
-    <a href="/practico3/index.html"><div class="glyphicon glyphicon-home" style="display: flex; margin: 5%;"></div></a>
-
+    <a href="/practico3/index.html">
+        <div class="glyphicon glyphicon-home" style="display: flex; margin: 5%; font-size: x-large;"></div>
+    </a>
 
 </body>
 </html>
