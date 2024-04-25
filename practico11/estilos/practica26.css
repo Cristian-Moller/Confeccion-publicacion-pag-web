@@ -1,0 +1,130 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #volver-atrás {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  background-color: #372246;
+  color: white;
+  height: 2vw;
+}
+
+body #caja-fondo {
+  border: 1px solid black;
+  border-radius: 25px;
+  background-image: url("/practico11/imagenes/marmol1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 70%;
+  height: 500px;
+  margin-top: 5vw;
+}
+
+body #caja-fondo #caja1 {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 30%;
+  height: 40%;
+  margin-top: 8vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation-name: cuadrado-a-circulo;
+          animation-name: cuadrado-a-circulo;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+body #caja-fondo #caja1 p {
+  font-size: 4vw;
+}
+
+@-webkit-keyframes cuadrado-a-circulo {
+  0% {
+    margin-left: 0%;
+    background-color: #ad68db;
+    border-radius: 5%;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  25% {
+    -webkit-transform: rotateY(100deg);
+            transform: rotateY(100deg);
+  }
+  50% {
+    margin-left: 30%;
+    background-color: #72e7e1;
+    border-radius: 5%;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  75% {
+    -webkit-transform: rotateY(290deg);
+            transform: rotateY(290deg);
+  }
+  100% {
+    margin-left: 70%;
+    background-color: #eea969;
+    border-radius: 5%;
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes cuadrado-a-circulo {
+  0% {
+    margin-left: 0%;
+    background-color: #ad68db;
+    border-radius: 5%;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  25% {
+    -webkit-transform: rotateY(100deg);
+            transform: rotateY(100deg);
+  }
+  50% {
+    margin-left: 30%;
+    background-color: #72e7e1;
+    border-radius: 5%;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  75% {
+    -webkit-transform: rotateY(290deg);
+            transform: rotateY(290deg);
+  }
+  100% {
+    margin-left: 70%;
+    background-color: #eea969;
+    border-radius: 5%;
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+/*# sourceMappingURL=practica26.css.map */

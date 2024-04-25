@@ -1,0 +1,57 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#volver-atrás {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  background-color: #372246;
+  color: white;
+  height: 2vw;
+}
+
+#fondo {
+  border: 1px solid black;
+  border-radius: 25px;
+  background: -webkit-gradient(linear, left top, right top, from(#af29ee), to(#5dc2eb));
+  background: linear-gradient(to right, #af29ee, #5dc2eb);
+  width: 70%;
+  height: 500px;
+  margin-top: 5vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#caja-fondo {
+  border: 1px solid black;
+  border-radius: 25px;
+  background-image: url("/practico11/imagenes/malaga.png"), url("/practico11/imagenes/madrid.png"), url("/practico11/imagenes/valencia.png"), url("/practico11/imagenes/cadaques.png"), url("/practico11/imagenes/rupit.png");
+  background-repeat: no-repeat;
+  background-size: 30% 35%;
+  background-position: left top, right top, center, left bottom, right bottom;
+  width: 100%;
+  height: 500px;
+}
+
+#caja-fondo:hover {
+  background-size: 20% 25%, 20% 25%, 40% 55%, 20% 25%, 20% 25%;
+}
+/*# sourceMappingURL=practica20.css.map */

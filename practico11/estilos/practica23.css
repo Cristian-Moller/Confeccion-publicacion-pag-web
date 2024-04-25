@@ -1,0 +1,173 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#volver-atrás {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  background-color: #372246;
+  color: white;
+  height: 2vw;
+}
+
+#caja-fondo {
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: white;
+  width: 70%;
+  height: 600px;
+  margin-top: 5vw;
+}
+
+#caja-fondo #caja1 {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: white;
+  width: 25%;
+  height: 30%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.5vw;
+  margin-left: 0.5vw;
+  font-size: 2vw;
+  -webkit-animation-name: movimiento-caja;
+          animation-name: movimiento-caja;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes movimiento-caja {
+  /* from{
+        background-color: white;
+        width: 25%;
+        height: 30%;
+        font-size: 2vw;
+        margin-top: 0.5vw;
+        margin-left: 0.5vw;
+    }
+    to{
+        background-color: rgb(158, 50, 221);
+        width: 35%;
+        height: 45%;
+        font-size: 4vw;
+        margin-top: 10vw;
+        margin-left: 22vw;
+        
+    } */
+  0% {
+    background-color: white;
+    width: 25%;
+    height: 30%;
+    font-size: 2vw;
+    margin-top: 0.5vw;
+    margin-left: 0.5vw;
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    background-color: #a580bb;
+    width: 30%;
+    height: 37%;
+    font-size: 3vw;
+    margin-top: 5vw;
+    margin-left: 15vw;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    background-color: #9e32dd;
+    width: 35%;
+    height: 45%;
+    font-size: 4vw;
+    margin-top: 10vw;
+    margin-left: 22vw;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes movimiento-caja {
+  /* from{
+        background-color: white;
+        width: 25%;
+        height: 30%;
+        font-size: 2vw;
+        margin-top: 0.5vw;
+        margin-left: 0.5vw;
+    }
+    to{
+        background-color: rgb(158, 50, 221);
+        width: 35%;
+        height: 45%;
+        font-size: 4vw;
+        margin-top: 10vw;
+        margin-left: 22vw;
+        
+    } */
+  0% {
+    background-color: white;
+    width: 25%;
+    height: 30%;
+    font-size: 2vw;
+    margin-top: 0.5vw;
+    margin-left: 0.5vw;
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    background-color: #a580bb;
+    width: 30%;
+    height: 37%;
+    font-size: 3vw;
+    margin-top: 5vw;
+    margin-left: 15vw;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    background-color: #9e32dd;
+    width: 35%;
+    height: 45%;
+    font-size: 4vw;
+    margin-top: 10vw;
+    margin-left: 22vw;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=practica23.css.map */

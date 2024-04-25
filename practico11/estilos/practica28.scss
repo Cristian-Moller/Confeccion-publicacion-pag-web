@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+
+    #volver-atrás{
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+        background-color: rgb(55, 34, 70);
+        color: white;
+        height: 2vw;
+    }
+    #caja-fondo{
+        border: 1px solid black;
+        border-radius: 25px;
+        background-image: url('/practico11/imagenes/cancha-futbol.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 90%;
+        height: 650px;
+        margin-top: 2vw;
+        
+        
+
+        #caja1{
+            /* border: 1px solid black; */
+            background-image: url('/practico11/imagenes/pelota.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 50%;
+            width: 4vw;
+            height: 4vw;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: cuadrado-a-circulo;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+
+            img{
+                opacity: 0.5;
+            }
+            
+        }
+
+        .fijo{
+            position: fixed;
+            top: 20vw;
+            width: 4%;
+            height: 10%;
+
+        }
+        .img1{
+            left: 25vw;
+        }
+        .img2{
+            left: 42vw;
+        }
+        .img3{
+            left: 58vw;
+        }
+        .img4{
+            left: 75vw;
+        }
+                
+    }
+}
+
+@keyframes cuadrado-a-circulo{
+    0%{
+        margin-left: 1.5vw;
+        margin-top: 25vw;
+        
+    }
+    20%{
+        margin-left: 18vw;
+        margin-top: 5vw;
+    }
+    22%{
+        margin-left: 22vw;
+        margin-top: 5vw;
+        box-shadow: 10px 10px 20px rgba(124, 13, 216, 0.6) inset,
+                    -10px -10px 20px rgba(124, 13, 216, 0.6) inset;
+        transform: rotate(180deg);
+    }
+
+    35%{
+        margin-left: 32vw;
+        margin-top: 35vw;
+    }
+    40%{
+        margin-left: 35vw;
+        margin-top: 35vw;
+        box-shadow: 10px 10px 20px rgba(245, 124, 26, 0.6) inset,
+                    -10px -10px 20px rgba(245, 124, 26, 0.6) inset;
+        transform: rotate(360deg);
+    }
+
+    60%{
+        margin-left: 50vw;
+        margin-top: 9vw;
+    }
+    65%{
+        margin-left: 52vw;
+        margin-top: 10vw;
+        box-shadow: 10px 10px 20px rgba(16, 107, 243, 0.6) inset,
+                    -10px -10px 20px rgba(16, 107, 243, 0.6) inset;
+        transform: rotate(550deg);
+    }
+
+    75%{
+        margin-left: 65vw;
+        margin-top: 30vw;
+    }
+    80%{
+        margin-left: 68vw;
+        margin-top: 28vw;
+        box-shadow: 10px 10px 20px rgba(245, 4, 4, 0.6) inset,
+                    -10px -10px 20px rgba(245, 4, 4, 0.6) inset;
+
+        transform: rotate(720deg);
+    }
+
+    95%{
+        margin-left: 86vw;
+        margin-top: 15vw;
+    }
+    100%{
+        margin-left: 87vw;
+        margin-top: 15.5vw;
+        transform: rotate(1000deg);
+    }
+    
+}

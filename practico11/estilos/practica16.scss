@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+#volver-atrás{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+}
+#caja-fondo{
+    border: 1px solid black;
+    border-radius: 25px;
+    background-image: url('/practico11/imagenes/nike.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 70%;
+    height: 600px;
+    margin-top: 5vw;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    #caja1{
+        border: 1px solid black;
+        border-radius: 20px;
+        width: 30%;
+        height: 90%;
+        box-shadow: 40px 40px 50px rgb(16, 61, 3) inset,
+                    -40px -40px 50px rgb(16, 61, 3) inset;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            color: red;
+            font-size: 5vh; /* el ejercicio pide 45px */
+            font-weight: bold;
+        }
+        #txt0{
+            opacity: 1;
+        }
+        #txt1{
+            opacity: 0.9;
+        }
+        #txt2{
+            opacity: 0.8;
+        }
+        #txt3{
+            opacity: 0.7;
+        }
+        #txt4{
+            opacity: 0.6;
+        }
+        #txt5{
+            opacity: 0.5;
+        }
+        #txt6{
+            opacity: 0.4;
+        }
+        #txt7{
+            opacity: 0.3;
+        }
+        #txt8{
+            opacity: 0.2;
+        }
+        #txt9{
+            opacity: 0.1;
+        }        
+    }
+    #caja1:hover{
+        box-shadow: 40px 40px 50px rgb(16, 61, 3) inset,
+                    -40px -40px 50px rgb(16, 61, 3) inset;
+        #txt0:hover{
+            opacity: 1;
+            color: purple; /* Deberia ser amarillo pero el fondo no acompaña */
+        }
+        #txt1:hover{
+            opacity: 1;
+            color: purple; /* Deberia ser amarillo pero el fondo no acompaña */
+        }
+        #txt2:hover{
+            opacity: 1;
+            color: purple; /* Deberia ser amarillo pero el fondo no acompaña */
+        }
+        #txt3:hover{
+            opacity: 1;
+            color: purple; /* Deberia ser amarillo pero el fondo no acompaña */
+        }
+        #txt4:hover{
+            opacity: 1;
+            color: purple; /* Deberia ser amarillo pero el fondo no acompaña */
+        }
+        #txt5:hover{
+            opacity: 1;
+            color: purple; /* Deberia ser amarillo pero el fondo no acompaña */
+        }
+        #txt6:hover{
+            opacity: 1;
+            color: purple; /* Deberia ser amarillo pero el fondo no acompaña */
+        }
+        #txt7:hover{
+            opacity: 1;
+            color: purple; /* Deberia ser amarillo pero el fondo no acompaña */
+        }
+        #txt8:hover{
+            opacity: 1;
+            color: purple; /* Deberia ser amarillo pero el fondo no acompaña */
+        }
+        #txt9:hover{
+            opacity: 1;
+            color: purple; /* Deberia ser amarillo pero el fondo no acompaña */
+        }
+    }    
+   
+}

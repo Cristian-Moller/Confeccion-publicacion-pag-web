@@ -1,0 +1,116 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#volver-atrás {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  background-color: #372246;
+  color: white;
+  height: 2vw;
+}
+
+#caja-fondo {
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: white;
+  width: 40%;
+  height: 700px;
+  margin-top: 2vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  /* align-items: center; */
+}
+
+#caja-fondo div {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 7vw;
+  -webkit-transition: all 8s;
+  transition: all 8s;
+}
+
+#caja-fondo div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+#caja-fondo #caja1 {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: white;
+  width: 40%;
+  height: 25%;
+  /* transition-property: right; */
+}
+
+#caja-fondo #caja1:hover {
+  width: 60%;
+  height: 40%;
+  margin-left: 15vw;
+}
+
+#caja-fondo #caja2 {
+  border: 15px solid black;
+  background-image: url("/practico11/imagenes/textura.png");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  opacity: 0.1;
+  width: 40%;
+  height: 20%;
+  font-size: 3vw;
+}
+
+#caja-fondo #caja2:hover {
+  border: 20px solid black;
+  opacity: 1;
+  width: 60%;
+  height: 30%;
+  margin-left: 200px;
+  /* posee la mitad de lo que pide el tp porque se sale de caja fondo */
+}
+
+#caja-fondo #caja3 {
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color: #78f096;
+  width: 40%;
+  height: 20%;
+}
+
+#caja-fondo #caja3:hover {
+  border: 3px solid #ee0909;
+  background-color: #a04af1;
+  font-size: large;
+  text-align: end;
+}
+/*# sourceMappingURL=practica22.css.map */

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#volver-atrás {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  background-color: #372246;
+  color: white;
+  height: 2vw;
+}
+
+#caja-fondo {
+  border: 1px solid black;
+  border-radius: 25px;
+  background-image: url("/practico11/imagenes/paris.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 50%;
+  height: 600px;
+  margin-top: 5vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#caja-fondo div {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#caja-fondo #caja1 {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: white;
+  width: 20%;
+  height: 20%;
+  margin-right: 7vw;
+}
+
+#caja-fondo #caja1:hover {
+  width: 40%;
+}
+
+#caja-fondo #caja2 {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #fc0808;
+  width: 20%;
+  height: 20%;
+  margin-right: 7vw;
+}
+
+#caja-fondo #caja2:hover {
+  background-color: #2008fc;
+}
+
+#caja-fondo #caja3 {
+  border: 10px solid #9107d1;
+  border-radius: 20px;
+  background-color: white;
+  width: 20%;
+  height: 20%;
+  margin-right: 7vw;
+}
+
+#caja-fondo #caja3:hover {
+  border: 30px solid #9107d1;
+}
+/*# sourceMappingURL=practica21.css.map */

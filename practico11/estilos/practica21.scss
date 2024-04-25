@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+#volver-atrás{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+}
+#caja-fondo{
+    border: 1px solid black;
+    border-radius: 25px;
+    background-image: url('/practico11/imagenes/paris.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 50%;
+    height: 600px;
+    margin-top: 5vw;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+    div{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 2s;
+    }
+
+    #caja1{
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: white;
+        width: 20%;
+        height: 20%;
+        margin-right: 7vw;
+       
+    }
+    #caja1:hover{
+        width: 40%;
+    }    
+    #caja2{
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: rgb(252, 8, 8);
+        width: 20%;
+        height: 20%;
+        margin-right: 7vw;
+        
+    }
+    #caja2:hover{
+        background-color: rgb(32, 8, 252);
+    }
+    #caja3{
+        border: 10px solid rgb(145, 7, 209);
+        border-radius: 20px;
+        background-color: white;
+        width: 20%;
+        height: 20%;
+        margin-right: 7vw;
+        
+    }
+    #caja3:hover{
+        border: 30px solid rgb(145, 7, 209);
+    } 
+}

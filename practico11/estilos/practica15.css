@@ -1,0 +1,109 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#volver-atrás {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  background-color: #372246;
+  color: white;
+  height: 2vw;
+}
+
+#caja-fondo {
+  border: 1px solid black;
+  border-radius: 25px;
+  background-image: url("/practico11/imagenes/cuadriculado.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 70%;
+  height: 500px;
+  margin-top: 5vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#caja-fondo #caja1 {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 40%;
+  height: 70%;
+  -webkit-box-shadow: 10px 10px 10px #433258;
+          box-shadow: 10px 10px 10px #433258;
+}
+
+#caja-fondo #caja1 p {
+  margin: 1vw;
+  text-align: justify;
+  font-size: 1vw;
+  font-weight: bold;
+  font-family: cursive;
+  text-decoration: line-through;
+  text-transform: lowercase;
+  letter-spacing: -3px;
+  line-height: 2;
+}
+
+#caja-fondo #caja1:hover p {
+  margin: 1vw;
+  text-align: justify;
+  font-size: 1.2vw;
+  font-weight: inherit;
+  font-family: fantasy;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+#caja-fondo #caja2 {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 40%;
+  height: 70%;
+  -webkit-box-shadow: 10px 10px 10px #433258;
+          box-shadow: 10px 10px 10px #433258;
+}
+
+#caja-fondo #caja2 p {
+  margin: 1vw;
+  color: white;
+  direction: rtl;
+  text-decoration: overline underline;
+  letter-spacing: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9vw;
+  text-shadow: 2px 2px 5px red;
+}
+
+#caja-fondo #caja2:hover p {
+  margin: 1vw;
+  color: #470585;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0;
+  font-family: cursive;
+  font-size: 1.05vw;
+  text-shadow: 2px 2px 5px #5c0606;
+}
+/*# sourceMappingURL=practica15.css.map */

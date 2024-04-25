@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+#volver-atrás{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+}
+#caja-fondo{
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: white;
+    width: 40%;
+    height: 700px;
+    margin-top: 2vw;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    
+    div{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 7vw;
+        transition: all 8s;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+    }
+
+    #caja1{
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: white;
+        width: 40%;
+        height: 25%;
+        /* transition-property: right; */
+       
+    }
+    #caja1:hover{
+        width: 60%;
+        height: 40%;
+        margin-left: 15vw;
+    }    
+    #caja2{
+        border: 15px solid black;
+        background-image: url('/practico11/imagenes/textura.png');
+        background-size: 100% 100%;
+        border-radius: 20px;
+        opacity: 0.1;
+        width: 40%;
+        height: 20%;
+        font-size: 3vw;
+        
+    }
+    #caja2:hover{
+        border: 20px solid black;
+        opacity: 1;
+        width: 60%;
+        height: 30%;
+        margin-left: 200px; /* posee la mitad de lo que pide el tp porque se sale de caja fondo */
+    }
+    #caja3{
+        border: 3px solid black;
+        border-radius: 20px;
+        background-color: rgb(120, 240, 150);
+        width: 40%;
+        height: 20%;
+        
+    }
+    #caja3:hover{
+        border: 3px solid rgb(238, 9, 9);
+        background-color: rgb(160, 74, 241);
+        font-size: large;
+        text-align: end;
+    } 
+}

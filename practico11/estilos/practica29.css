@@ -1,0 +1,337 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #volver-atrás {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  background-color: #372246;
+  color: white;
+  height: 2vw;
+}
+
+body #caja-fondo {
+  border: 1px solid black;
+  border-radius: 25px;
+  background-image: url("/practico11/imagenes/mesa-billar.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 80%;
+  height: 650px;
+  margin-top: 2vw;
+}
+
+body #caja-fondo #caja1 {
+  background-image: url("/practico11/imagenes/taco-billar.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 22vw;
+  height: 0.5vw;
+  position: absolute;
+  top: 38vw;
+  left: 18vw;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: palo-billar;
+          animation-name: palo-billar;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body #caja-fondo #caja1 img {
+  opacity: 0.5;
+}
+
+body #caja-fondo .fijo {
+  position: absolute;
+}
+
+body #caja-fondo .img1 {
+  width: 3vw;
+  height: 3vw;
+  top: 27vw;
+  left: 38vw;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: bola-blanca;
+          animation-name: bola-blanca;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body #caja-fondo .img2 {
+  width: 3vw;
+  height: 3vw;
+  top: 21vw;
+  left: 27vw;
+  -webkit-animation-duration: 8.5s;
+          animation-duration: 8.5s;
+  -webkit-animation-name: bola-azul;
+          animation-name: bola-azul;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body #caja-fondo .img3 {
+  width: 3vw;
+  height: 3vw;
+  top: 15vw;
+  left: 51vw;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: bola-roja;
+          animation-name: bola-roja;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body #caja-fondo .img4 {
+  width: 3vw;
+  height: 3vw;
+  top: 18vw;
+  left: 27vw;
+  -webkit-animation-duration: 8.5s;
+          animation-duration: 8.5s;
+  -webkit-animation-name: bola-violeta;
+          animation-name: bola-violeta;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes palo-billar {
+  0% {
+    top: 38vw;
+    left: 18vw;
+    -webkit-transform: rotate(137deg);
+            transform: rotate(137deg);
+  }
+  65% {
+    top: 36vw;
+    left: 20vw;
+    -webkit-transform: rotate(137deg);
+            transform: rotate(137deg);
+  }
+  100% {
+  }
+}
+
+@keyframes palo-billar {
+  0% {
+    top: 38vw;
+    left: 18vw;
+    -webkit-transform: rotate(137deg);
+            transform: rotate(137deg);
+  }
+  65% {
+    top: 36vw;
+    left: 20vw;
+    -webkit-transform: rotate(137deg);
+            transform: rotate(137deg);
+  }
+  100% {
+  }
+}
+
+@-webkit-keyframes bola-blanca {
+  0% {
+    top: 27vw;
+    left: 38vw;
+  }
+  50% {
+    top: 14vw;
+    left: 50vw;
+  }
+  95% {
+    visibility: hidden;
+  }
+  100% {
+    top: 4.5vw;
+    left: 48.5vw;
+    visibility: hidden;
+  }
+}
+
+@keyframes bola-blanca {
+  0% {
+    top: 27vw;
+    left: 38vw;
+  }
+  50% {
+    top: 14vw;
+    left: 50vw;
+  }
+  95% {
+    visibility: hidden;
+  }
+  100% {
+    top: 4.5vw;
+    left: 48.5vw;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes bola-roja {
+  0% {
+    top: 15vw;
+    left: 51vw;
+  }
+  30% {
+    top: 15vw;
+    left: 51vw;
+  }
+  35% {
+    top: 7.5vw;
+    left: 63vw;
+  }
+  50% {
+    top: 20vw;
+    left: 81vw;
+  }
+  75% {
+    top: 34vw;
+    left: 60vw;
+  }
+  90% {
+    top: 20vw;
+    left: 28vw;
+  }
+  100% {
+    top: 20vw;
+    left: 25vw;
+  }
+}
+
+@keyframes bola-roja {
+  0% {
+    top: 15vw;
+    left: 51vw;
+  }
+  30% {
+    top: 15vw;
+    left: 51vw;
+  }
+  35% {
+    top: 7.5vw;
+    left: 63vw;
+  }
+  50% {
+    top: 20vw;
+    left: 81vw;
+  }
+  75% {
+    top: 34vw;
+    left: 60vw;
+  }
+  90% {
+    top: 20vw;
+    left: 28vw;
+  }
+  100% {
+    top: 20vw;
+    left: 25vw;
+  }
+}
+
+@-webkit-keyframes bola-azul {
+  0% {
+    top: 21vw;
+    left: 27vw;
+  }
+  50% {
+    top: 21vw;
+    left: 27vw;
+  }
+  85% {
+    top: 37vw;
+    left: 13vw;
+    visibility: hidden;
+  }
+  100% {
+    top: 37vw;
+    left: 13vw;
+    visibility: hidden;
+  }
+}
+
+@keyframes bola-azul {
+  0% {
+    top: 21vw;
+    left: 27vw;
+  }
+  50% {
+    top: 21vw;
+    left: 27vw;
+  }
+  85% {
+    top: 37vw;
+    left: 13vw;
+    visibility: hidden;
+  }
+  100% {
+    top: 37vw;
+    left: 13vw;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes bola-violeta {
+  0% {
+    top: 18vw;
+    left: 27vw;
+  }
+  50% {
+    top: 18vw;
+    left: 27vw;
+  }
+  85% {
+    top: 4.5vw;
+    left: 13vw;
+    visibility: hidden;
+  }
+  100% {
+    top: 4.5vw;
+    left: 13vw;
+    visibility: hidden;
+  }
+}
+
+@keyframes bola-violeta {
+  0% {
+    top: 18vw;
+    left: 27vw;
+  }
+  50% {
+    top: 18vw;
+    left: 27vw;
+  }
+  85% {
+    top: 4.5vw;
+    left: 13vw;
+    visibility: hidden;
+  }
+  100% {
+    top: 4.5vw;
+    left: 13vw;
+    visibility: hidden;
+  }
+}
+/*# sourceMappingURL=practica29.css.map */

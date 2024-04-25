@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+
+    #volver-atrás{
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+        background-color: rgb(55, 34, 70);
+        color: white;
+        height: 2vw;
+    }
+    #caja-fondo{
+        border: 1px solid black;
+        border-radius: 25px;
+        background-image: url('/practico11/imagenes/marmol1.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 70%;
+        height: 500px;
+        margin-top: 5vw;
+        
+        
+
+        #caja1{
+            border: 1px solid black;
+            border-radius: 20px;
+            width: 30%;
+            height: 40%;
+            margin-top: 8vw;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: cuadrado-a-circulo;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+            p{
+                font-size: 4vw;
+            }
+        }
+                
+    }
+}
+
+@keyframes cuadrado-a-circulo{
+    0%{
+        margin-left: 0%;
+        background-color: rgb(173, 104, 219);
+        border-radius: 5%;
+        transform: rotateY(0deg);
+    }
+    25%{
+        transform: rotateY(100deg);
+    }
+    50%{
+        margin-left: 30%;
+        background-color: rgb(114, 231, 225);
+        border-radius: 5%;
+        transform: rotateY(180deg);
+    }
+    75%{
+        transform: rotateY(290deg);
+    }
+    100%{
+        margin-left: 70%;
+        background-color: rgb(238, 169, 105);
+        border-radius: 5%;
+        transform: rotateY(360deg);
+    }
+}
