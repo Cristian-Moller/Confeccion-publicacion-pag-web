@@ -1,0 +1,905 @@
+*{
+    margin: 0;
+    vertical-align: top;
+    font-family: 'Oswald', sans-serif;
+    font-size: small;
+}
+body{
+    width: 100%;
+    height: auto;
+}
+#volver-atrás{
+    position: fixed;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+}
+header{
+    width: 100%;
+    height: auto;
+    background-image: url("/practico9/imagenes_travel/beautiful-beach.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 1vw;
+}
+.logo{
+    display: inline-flex;
+    /* border: 1px solid black; */
+    width: 35%;
+    height: 4vw;
+    margin-left: 14%;
+    margin-top: 3%;
+    img{
+        border-radius: 40%;
+    }
+    div{
+        margin-left: 1vw;
+        h1{
+            font-size: 2vw;
+            height: 55%;
+        }
+        P{
+            height: 40%;
+        }
+    }
+}
+#iconos-redes{
+    display: inline-flex;
+    justify-content: end;
+    /* border: 1px solid black; */
+    width: 35.75%;
+    height: 4vw;
+    margin-top: 3%;
+    align-items: center;
+    div{
+        /* border: 1px solid black; */
+        width: 7%;
+        height: 50%;
+        margin-right: 0.5vw;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 70%;
+        }
+    }
+}
+#padre{
+    /* border: 1px solid black; */
+    margin-top: 2vw;
+    #menu{
+        /* border: 1px solid black; */
+        display: inline-flex;
+        width: 70.5%;
+        height: 4vw;
+        margin-left: 14%;
+        
+        span{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid black; */
+            width: 14%;
+            height: 4vw;
+            background-color: rgb(247, 228, 64); 
+            font-size: 1.5vw;
+            color: white;
+            img{
+                width: 100%;
+                height: 100%;
+                
+            }
+            #input{
+                background-color: rgb(247, 228, 64);
+            }
+        }
+        span:first-child{
+            width: 8%;   
+        }
+        span:nth-child(7){
+            display: inline-flex;
+            justify-content: space-around;
+            width: 22%;
+            input{
+                height: 2.5vw;
+                width: 10vw;
+                border-radius: 1vw;
+            }
+            img{
+                width: 3vw;
+                height: 3vw;
+            }
+        }
+    }
+    #foto-menu{
+        /* border: 1px solid black; */
+        background-image: url("/practico9/imagenes_travel/muelle.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 70.5%;
+        height: 20vw;
+        margin-left: 14%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        
+        h2{
+            font-size: 2vw;
+            margin-left: 7%;
+            color: rgb(89, 40, 94);
+        }
+        p{
+            font-size: 2vw;
+            margin-left: 7%;
+            color: rgb(194, 59, 18);
+        }
+        div{
+            display: inline-flex;
+            width: 1.5vw;
+            height: 1.5vw;
+            margin-left: 7%;
+    
+            img{
+                width: 100%;
+                height: 100%;
+                margin-left: 0.5vw;
+            }
+        }
+    }
+}
+
+#caja-feature{
+    /* border: 1px solid black; */
+    margin-top: 0.1vw;
+    
+    #feature{
+       /*  border: 1px solid black; */
+        display: inline-flex;
+        align-items: center;
+        width: 70.5%;
+        height: 4vw;
+        background-color: rgb(229, 226, 226);
+        margin-left: 14%;
+        p{
+            font-size: 2vw;
+            margin-left: 2%;
+        }
+    }
+
+    #caja-imagenes{
+        /* border: 1px solid black; */
+        background-color: rgb(65, 62, 62);
+        width: 70.5%;
+        height: 10vw;
+        margin-left: 14%;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        div{
+            border: 3px solid rgb(245, 236, 236);
+            width: 15%;
+            height: 80%;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+    }
+    #flecha{
+        /* border: 1px solid black; */
+        display: inline-flex;
+        margin-top: 4vw;
+        margin-left: -1vw;
+        width: 1.5vw;
+        height: 1.5vw;
+        
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+#caja-noticias{
+    /* border: 1px solid black; */
+    width: 70.5%;
+    height: 220px;
+    margin-left: 14%;
+    margin-top: 1vw;
+    display: inline-flex;
+    justify-content: space-between;
+
+    >div{
+        /* border: 1px solid black; */
+        width: 18%;
+        height: 100%;
+        
+        
+        .titulo{
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p{
+                margin-left: 7%;
+            }            
+        }
+        .foto{
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 30%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .resumen{
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 47%;
+            display: inline-flex;
+            overflow: hidden;
+            flex-direction: column;
+            justify-content: center;
+            
+            p{
+                margin-left: 7%;
+            }
+            button{
+                width: 4vw;
+                display: flex;
+                justify-content: center;
+                margin-left: 6%;
+                margin-top: 4%;
+            }
+        }
+    }
+    >div:nth-child(1){
+        background-color: rgb(137, 221, 247);
+
+    }
+    >div:nth-child(2){
+        background-color: rgb(155, 248, 228);
+
+    }
+    >div:nth-child(3){
+        background-color: rgb(233, 219, 94);
+
+    }
+    >div:nth-child(4){
+        background-color: rgb(196, 128, 241);
+
+    }
+}
+
+#sub-noticias{
+    /* border: 1px solid black; */
+    width: 70.5%;
+    height: 280px;
+    margin-left: 14%;
+    margin-top: 1vw;
+    display: inline-flex;
+    justify-content: space-between;
+    #sn-principal{
+        /* border: 1px solid black; */
+        width: 45%;
+        height: 100%;
+        align-items: center;
+        
+        .p1{
+            color: rgb(110, 200, 241);
+        }
+
+        >div{
+            display: flex;
+            flex-wrap: wrap;
+            
+            #caja-imagen{
+                width: 35%;
+                height: 40%;
+                display: inline-flex;
+                margin-bottom: 1vw;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                
+            }
+            #texto{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin-bottom: 1vw;
+                margin-left: 1vw;
+            }
+        }
+
+        button{
+            width: 4vw;
+            background-color: rgb(46, 44, 44);
+            color: white;
+            display: flex;
+            justify-content: center;
+            margin-top: 4%;
+        }
+    }
+    #sn-secundarias{
+        /* border: 1px solid black; */
+        width: 45%;
+        height: 100%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        .un-cuarto{
+            /* border: 1px solid black; */
+            width: 45%;
+            height: 45%;
+            #al-cien{
+                font-size: 1.25vw;
+            }
+            .parrafo{
+                font-size: .8vw;
+            }
+            button{
+                width: 4vw;
+                background-color: rgb(46, 44, 44);
+                color: white;
+                display: flex;
+                justify-content: center;
+                margin-top: 4%;
+            }
+            .p1{
+                color: rgb(110, 200, 241);
+            }
+            .p2{
+                color: rgb(58, 238, 169);
+            }
+            #p3{
+                color: rgb(231, 233, 115);
+            }
+            #p4{
+                color: rgb(235, 142, 243);
+            }            
+        }
+    }
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(58, 54, 54);
+    display: inline-flex;
+    margin-bottom: 3vw;
+    
+    .logo{
+        width: 30%;
+        height: 4vw;
+        margin-left: 14%;
+        margin-top: 3%;
+        >div{
+            display: inline-flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-around;
+            h1{
+                font-size: 2vw;
+                height: 55%;
+                color: white;
+            }
+            P{
+                height: 40%;
+                color: white;
+            }
+            div{
+                color: yellow;
+            }
+        }
+
+    }
+    
+    #caja-final{
+        /* border: 1px solid white; */
+        width: 35%;
+        height: 100%;
+        margin-left: 6vw;
+        display: inline-flex;
+        justify-content: space-around;
+
+        
+
+        .caja-lista{
+            /* border: 1px solid white; */
+            width: 25%;
+            height: 100%;
+            color: rgb(148, 140, 150);
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 420px) {
+    *{
+        margin: 0;
+        vertical-align: top;
+        font-family: 'Oswald', sans-serif;
+        font-size: small;
+    }
+    body{
+        width: 100%;
+        height: auto;
+        margin-top: 8vw;
+    }
+    #volver-atrás{
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+        background-color: rgb(55, 34, 70);
+        color: white;
+        height: 8vw;
+    }
+    header{
+        
+        width: 100%;
+        height: auto;
+        background-image: url("/practico9/imagenes_travel/beautiful-beach.jpg");
+        background-repeat: no-repeat;
+        background-size: 600%;
+        margin-bottom: 1vw;
+    }
+    .logo{
+        display: inline-flex;
+        /* border: 1px solid black; */
+        width: 30%;
+        height: 12vw;
+        margin-left: 10%;
+        margin-top: 3%;
+        img{
+            border-radius: 50%;
+            width: 50%;
+            height: 120%;
+        }
+        div{
+            margin-left: 6vw;
+            h1{
+                font-size: 6vw;
+                height: 55%;
+            }
+            P{
+                height: 0;
+                font-size: 4vw;
+            }
+        }
+    }
+    #iconos-redes{
+        display: inline-flex;
+        justify-content: end;
+        /* border: 1px solid black; */
+        width: 40%;
+        height: 10vw;
+        margin-top: 3%;
+        align-items: center;
+        margin-left: 8vw;
+        div{
+            /* border: 1px solid black; */
+            width: 15%;
+            height: 80%;
+            margin-right: 1vw;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 70%;
+            }
+        }
+    }
+    #padre{
+        /* border: 1px solid black; */
+        margin-top: 2vw;
+        #menu{
+            /* border: 1px solid black; */
+            display: inline-flex;
+            flex-direction: column;
+            width: 112%;
+            height: auto;
+            margin-left: 5%;
+            
+            span{
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                /* border: 1px solid black; */
+                width: 80%;
+                height: 10vw;
+                background-color: rgb(247, 228, 64); 
+                font-size: 6vw;
+                color: rgb(187, 122, 187);
+                img{
+                    width: 25%;
+                    height: 100%;
+                    
+                }
+                #input{
+                    background-color: rgb(247, 228, 64);
+                }
+            }
+            span:first-child{
+                width: 80%; 
+                  
+            }
+            span:nth-child(7){
+                width: 80%;
+                justify-content: center;
+                input{
+                    height: 4vw;
+                    width: 30vw;
+                    border-radius: 1vw;
+                }
+                img{
+                    width: 8vw;
+                    height: 80%;
+                }
+            }
+        }
+        #foto-menu{
+            /* border: 1px solid black; */
+            background-image: url("/practico9/imagenes_travel/muelle.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width:90%;
+            height: 60vw;
+            margin-left: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            
+            h2{
+                font-size: 8vw;
+                margin-left: 7%;
+                color: rgb(89, 40, 94);
+            }
+            p{
+                font-size: 6vw;
+                margin-left: 7%;
+                color: rgb(112, 30, 5);
+                font: 5vw arial ;
+                
+            }
+            div{
+                display: inline-flex;
+                width: 5vw;
+                height: 5vw;
+                margin-left: 7%;
+        
+                img{
+                    width: 100%;
+                    height: 100%;
+                    margin-left: 0.5vw;
+                }
+            }
+        }
+    }
+    
+    #caja-feature{
+        /* border: 1px solid black; */
+        margin-top: 0.1vw;
+        
+        #feature{
+           /*  border: 1px solid black; */
+            display: inline-flex;
+            align-items: center;
+            width: 90%;
+            height: 10vw;
+            background-color: rgb(229, 226, 226);
+            margin-left: 5%;
+            p{
+                font-size: 5vw;
+                margin-left: 2%;
+            }
+        }
+    
+        #caja-imagenes{
+            /* border: 1px solid black; */
+            background-color: rgb(65, 62, 62);
+            width: 90%;
+            height: 25vw;
+            margin-left: 5%;
+            display: inline-flex;
+            justify-content: space-around;
+            align-items: center;
+            div{
+                border: 3px solid rgb(245, 236, 236);
+                width: 18%;
+                height: 70%;
+    
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            
+        }
+        #flecha{
+            /* border: 1px solid black; */
+            display: inline-flex;
+            margin-top: 10vw;
+            margin-left: -3vw;
+            width: 5vw;
+            height: 5vw;
+            
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    
+    #caja-noticias{
+        /* border: 1px solid black; */
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        margin-top: 1vw;
+        display: inline-flex;
+        flex-wrap: wrap;
+        row-gap: 3vw;
+        
+        >div{
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 100%;
+            margin-bottom: 1vw;
+            padding-bottom: 1vw;
+            
+            .titulo{
+                /* border: 1px solid black; */
+                width: 100%;
+                height: 20%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                p{
+                    margin-left: 7%;
+                }            
+            }
+            .foto{
+                /* border: 1px solid black; */
+                width: 100%;
+                height: 40%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .resumen{
+                /* border: 1px solid black; */
+                width: 100%;
+                height: 47%;
+                display: inline-flex;
+                overflow: hidden;
+                flex-direction: column;
+                justify-content: center;
+                
+                p{
+                    margin-left: 7%;
+                }
+                button{
+                    width: 10vw;
+                    display: flex;
+                    justify-content: center;
+                    margin-left: 6%;
+                    margin-top: 3%;
+                }
+            }
+        }
+        >div:nth-child(1){
+            background-color: rgb(137, 221, 247);
+    
+        }
+        >div:nth-child(2){
+            background-color: rgb(155, 248, 228);
+    
+        }
+        >div:nth-child(3){
+            background-color: rgb(233, 219, 94);
+    
+        }
+        >div:nth-child(4){
+            background-color: rgb(196, 128, 241);
+    
+        }
+    }
+    
+    #sub-noticias{
+        /* border: 1px solid black; */
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        margin-top: 1vw;
+        display: inline-flex;
+        justify-content: space-between;
+        #sn-principal{
+            /* border: 1px solid black; */
+            width: 45%;
+            height: 100%;
+            align-items: center;
+            
+            .p1{
+                color: rgb(110, 200, 241);
+            }
+    
+            >div{
+                display: flex;
+                flex-wrap: wrap;
+                
+                #caja-imagen{
+                    width: 100%;
+                    height: 40%;
+                    display: inline-flex;
+                    margin-bottom: 1vw;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    
+                }
+                #texto{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    margin-bottom: 1vw;
+                    margin-left: 1vw;
+                }
+            }
+    
+            button{
+                width: 10vw;
+                background-color: rgb(46, 44, 44);
+                color: white;
+                display: flex;
+                justify-content: center;
+                margin-top: 4%;
+            }
+        }
+        #sn-secundarias{
+            /* border: 1px solid black; */
+            width: 50%;
+            height: 100%;
+            display: inline-flex;
+            flex-wrap: wrap;
+            
+            
+            .un-cuarto{
+                /* border: 1px solid black; */
+                width: 100%;
+                height: 45%;
+                margin-bottom: 1vw;
+                #al-cien{
+                    font-size: 3vw;
+                }
+                .parrafo{
+                    font-size: 1.8vw;
+                }
+                button{
+                    width: 9vw;
+                    background-color: rgb(46, 44, 44);
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 4%;
+                }
+                .p1{
+                    color: rgb(110, 200, 241);
+                }
+                .p2{
+                    color: rgb(58, 238, 169);
+                }
+                #p3{
+                    color: rgb(231, 233, 115);
+                }
+                #p4{
+                    color: rgb(235, 142, 243);
+                }            
+            }
+        }
+    }
+    footer{
+        width: 100%;
+        height: auto;
+        background-color: rgb(58, 54, 54);
+        display: inline-flex;
+        flex-direction: column;
+        margin-bottom: 3vw;
+        
+        .logo{
+            width: 90%;
+            height: 10vw;
+            margin-left: 5%;
+            margin-top: 3%;
+            display: inline-flex;
+            flex-direction: row;
+            img{
+                border-radius: 50%;
+                width: 15%;
+                height: 90%;
+            }
+            >div{
+                display: inline-flex;
+                /* flex-wrap: wrap; */
+                flex-direction: column;
+                justify-content: space-around;
+                h1{
+                    font-size: 4vw;
+                    height: 55%;
+                    color: white;
+                    margin-left: 3vw;
+                }
+                P{
+                    height: 40%;
+                    color: white;
+                    font-size: 3vw;
+                    margin-left: 3vw;
+                }
+                div{
+                    color: yellow;
+                    margin-left: 7vw;
+                }
+            }
+    
+        }
+        
+        #caja-final{
+            /* border: 1px solid white; */
+            width: 90%;
+            height: 35vw;
+            margin-left: 0;
+            display: inline-flex;
+            justify-content: space-around;
+    
+            
+    
+            .caja-lista{
+                /* border: 1px solid white; */
+                width: 30%;
+                height: 100%;
+                color: rgb(148, 140, 150);
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    
+            }
+        }
+    }
+    
+}

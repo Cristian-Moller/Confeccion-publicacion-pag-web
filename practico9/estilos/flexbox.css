@@ -1,0 +1,227 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  vertical-align: top;
+}
+
+body {
+  background-color: burlywood;
+  margin-top: 2vw;
+}
+
+#body2 {
+  background-color: aquamarine;
+}
+
+#volver-atrás {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  background-color: #372246;
+  color: white;
+  height: 2vw;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.caja-azul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 1px solid blue;
+  width: 45%;
+  height: 350px;
+  margin: 1vw;
+}
+
+.caja-img {
+  border: 1px solid black;
+  width: 18%;
+  height: 90px;
+}
+
+#zonaA {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#zonaA .caja-img {
+  margin-top: 2vw;
+}
+
+#zonaB {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  /* ayuda a que las columnas esten juntas */
+}
+
+#zonaB .caja-img {
+  margin: 1vh;
+}
+
+#zonaC {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+#zonaC .caja-img {
+  height: 50px;
+  /* tuve que hacer mas pequeñas las imagenes para despues aplicar flex-grow (y ocupen la caja padre) */
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#zonaD {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  /* ayuda a que las filas esten juntas */
+}
+
+#zonaD .caja-img {
+  margin: 2vh;
+}
+
+/* ---------------------------------------------- */
+.caja-img1 {
+  border: 1px solid black;
+  width: 18%;
+  height: 90px;
+  background-image: url("/practico9/imagenes/gijon.jpg");
+  background-size: cover;
+}
+
+.caja-img2 {
+  border: 1px solid black;
+  width: 18%;
+  height: 90px;
+  background-image: url("/practico9/imagenes/leon.jpg");
+  background-size: cover;
+}
+
+.caja-img3 {
+  border: 1px solid black;
+  width: 18%;
+  height: 90px;
+  background-image: url("/practico9/imagenes/logrono.jpg");
+  background-size: cover;
+}
+
+.caja-img4 {
+  border: 1px solid black;
+  width: 18%;
+  height: 90px;
+  background-image: url("/practico9/imagenes/merida.jpg");
+  background-size: cover;
+}
+
+#zonaE {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#zonaE .caja-img1 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+#zonaE .caja-img2 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#zonaE .caja-img3 {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+#zonaE .caja-img4 {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+#zonaF {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#zonaF .caja-img3 {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+#zonaG {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#zonaH {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+#zonaH .caja-img1, #zonaH .caja-img3 {
+  margin-bottom: 2vh;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  /* como se utiliza el flex - shrink???????????????????????????????? */
+}
+
+#zonaH .caja-img2, #zonaH .caja-img4 {
+  margin-bottom: 2vh;
+  -ms-flex-negative: 4;
+      flex-shrink: 4;
+  /* como se utiliza el flex - shrink???????????????????????????????? */
+}
+/*# sourceMappingURL=flexbox.css.map */
