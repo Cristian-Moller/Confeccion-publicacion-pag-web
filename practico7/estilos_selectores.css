@@ -1,0 +1,451 @@
+*{
+    margin: 0%;
+    position: relative;
+    background-color: rgb(245, 217, 180);
+    vertical-align: top; /* me alinea todos los div arriba */
+}
+#volver-atrás{
+    position: fixed;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+    z-index: 1;
+}
+h1, form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton{
+    background-color: gray;
+}  
+.buscar{
+    background-color: honeydew;
+}
+img, iframe{
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 90%;
+    height: auto;
+    border: 1px dashed rgb(40, 168, 177);
+    margin-left: 5%;
+    margin-top: 2%;
+    display: inline-block;
+}
+#encabezado{
+    width: 98%;
+    height: 180px;
+    margin: 1%;
+    border: 1px solid black;
+}
+#logo{
+    display: inline-block;
+    margin: 0;
+    width: 22%;
+    height: 40%;
+    border: 1px solid black;
+    margin: 1%;
+}
+#nombre-empresa{
+    display: inline-block;
+    width: 42%;
+    height: 40%;
+    border: 1px solid black;
+    margin: 1%;
+}
+#busqueda{
+    display: inline-block;
+    width: 28%;
+    height: 40%;
+    border: 1px solid black;
+    margin: 1%;
+}
+#menu{
+    width: 97.5%;
+    height: 40%;
+    margin-left: 1%;
+    border: 1px solid black;
+    background-color: black;
+}
+#menu span{
+    display: inline-block;
+    border: 1px solid black;
+    width: 15%;
+    height: 90%;
+    margin-top: 0.25%;
+    text-align: center;
+    line-height: 4rem;
+    margin-right: -0.38%;
+}
+#menu span:first-child{
+    margin-left: 5%;
+}
+main{
+    width: 90%;
+    height: auto;
+    border: 1px dashed red;
+    margin-left: 5%;
+    margin-top: 0.5%;
+}
+.vehiculos{
+    display: inline-block;
+    width: 70%;
+    height: 98%;
+    border: 1px dashed goldenrod;
+    margin-left: 0.5% !important; /* El div vehiculos tiene un margin q sin importar no puedo modificar */
+    margin-top: 0.5%;
+}
+.vehiculos>div{
+    width: 90%;
+    height: 30%;
+    border: 1px solid black;
+    margin: 2% 5%;
+}
+.caja-rosa{
+    display: inline-block;
+    width: 39%;
+    height: 91%;
+    border: 1px dashed palevioletred;
+    margin: 1% 5%;
+}
+.marca{
+    height: 25%;
+    border: 1px solid black;
+    margin-top: 0.5%;
+}
+h2{
+    text-align: center;
+    background-color: rgb(167, 223, 172);
+    width: 100%;
+    height: 100%;
+    padding-top: 3%;
+}
+.imagen{
+    height: 70%;
+    border: 1px solid black;
+    margin-top: 0.5%;
+}
+.publicidad{
+    display: inline-block;
+    width: 28%;
+    height: 98%;
+    border: 1px dashed goldenrod;
+    margin-left: 0.5%;
+    margin-top: 0.5%;
+}
+#seccion-videos{
+    border: 1px solid black;
+    height: 10%;
+    text-align: center;
+    font-size: 30px;
+}
+.videos{
+    border: 1px solid black;
+    height: 200px;
+    margin-top: 5%;
+}
+.banner-publicidad{
+    border: 1px solid black;
+    height: 110px;
+    margin-top: 5%;
+}
+#banner1{
+    margin-top: 12%;
+}
+footer{
+    display: inline-block;
+    width: 90%;
+    height: 180px;
+    margin-left: 5%;
+    border: 1px dashed rgb(84, 184, 106);
+    margin-top: 0.5%;
+}
+#caja-footer{
+    width: 98%;
+    height: 90%;
+    margin-top: 0.5%;
+    margin-left: 1%;
+    border: 1px solid black;
+}
+#mapa{
+    display: inline-block;
+    width: 21%;
+    height: 90%;
+    border: 1px solid black;
+    margin-top: 0.5%;
+    margin-left: 1%;
+}
+#redes{
+    display: inline-block;
+    width: 30%;
+    height: 90%;
+    border: 1px solid black;
+    margin-top: 0.5%;
+    margin-left: 1%;
+}
+#redes-sociales{
+    display: inline-block;
+    width: 90%;
+    height: 30%;
+    border: 1px solid black;
+    margin-top: 0.5%;
+    margin-left: 3%;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconos{
+    display: inline-block;
+    width: 19.25%;
+    height: 50%;
+    border: 1px solid black;
+    margin-top: 1%;
+    margin-left: 3%;
+    border-radius: 15%;
+}
+.iconos img{
+    border-radius: 15%;
+}
+#contacto{
+    display: inline-block;
+    width: 21%;
+    height: 90%;
+    border: 1px solid black;
+    margin-top: 0.5%;
+    margin-left: 1%;
+}
+#condiciones{
+    display: inline-block;
+    width: 21%;
+    height: 90%;
+    border: 1px solid black;
+    margin-top: 0.5%;
+    margin-left: 1%;
+}
+h5{
+    text-align: center;
+    margin-top: 3% !important;
+    font-size: 22px;
+    text-decoration: none;
+}
+ul, li{
+    margin-top: 2%;
+    font-size: 12px;
+}
+
+
+
+
+
+@media (max-width: 420px){
+    *{
+        margin: 0%;
+        background-color: rgb(245, 217, 180);
+        vertical-align: top; /* me alinea todos los div arriba */
+    }
+    img, iframe{
+        width: 100%;
+        height: 100%;
+    }
+    header{
+        width: 90%;
+        height: auto;
+        border: 1px dashed rgb(40, 168, 177);
+        margin-left: 5%;
+        margin-top: 2%;
+        display: inline-block;
+    }
+    #encabezado{
+        width: 98%;
+        height: auto;
+        margin: 1%;
+        border: 1px solid black;
+    }
+    .boton{
+        background-color: gray;
+    }  
+    .buscar{
+        background-color: honeydew;
+    }
+    #logo{
+        display: inline-block;
+        width: 50%;
+        height: 40%;
+        border: 1px solid black;
+        margin: 1%;
+    }
+    #nombre-empresa{
+        display: inline-block;
+        width: 42%;
+        height: 40%;
+        border: 1px solid black;
+        /* margin: 1%; */
+    }
+    h1, form{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 189%;
+    }
+    #busqueda{
+        display: inline-block;
+        width: 96%;
+        height: 15%;
+        border: 1px solid black;
+    }
+    #menu{
+        width: 96%;
+        height: auto;
+        border: 1px solid black;
+        background-color: black;
+    }
+    #menu span{
+        display: block;
+        border: 1px solid black;
+        width: 94%;
+        height: 95%;
+        line-height: 1rem !important;
+        font-size: 130%;
+        font-weight: bold;
+        margin: 2% 3% !important;
+    }
+    main{
+        width: 90%;
+        height: auto;
+        border: 1px dashed red;
+        margin-left: 5%;
+        margin-top: 0.5%;
+    }
+    .vehiculos{
+        display: inline-block;
+        width: 98%;
+        height: 98%;
+        border: 1px dashed goldenrod;
+        margin-left: 0.5% !important;
+        margin-top: 0.5%;
+    }
+    .vehiculos>div{
+        width: 90%;
+        height: 30%;
+        border: 1px solid black;
+        margin: 2% 5%;
+    }
+    .caja-rosa{
+        display: inline-block;
+        width: 90%;
+        height: 91%;
+        border: 1px dashed palevioletred;
+        margin: 1% 5%;
+    }
+    .marca{
+        height: 25%;
+        border: 1px solid black;
+        margin-top: 0.5%;
+    }
+    h2{
+        text-align: center;
+        background-color: rgb(167, 223, 172);
+        width: 100%;
+        height: 100%;
+        padding-top: 3%;
+    }
+    .imagen{
+        height: 70%;
+        border: 1px solid black;
+        margin-top: 0.5%;
+    }
+    .publicidad{
+        display: none; /* Oculto la publicidad de la pagina */
+    }
+    footer{
+        display: inline-block;
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        border: 1px dashed rgb(84, 184, 106);
+        margin-top: 0.5%;
+    }
+    #caja-footer{
+        width: 98%;
+        height: 90%;
+        margin-top: 0.5%;
+        border: 1px solid black;
+    }
+    #mapa{
+        display: inline-block;
+        width: 40%;
+        height: 120px;
+        border: 1px solid black;
+        margin-top: 0.5%;
+        margin-left: 1%;
+    }
+    #redes{
+        display: inline-block;
+        width: 55%;
+        height: 120px;
+        border: 1px solid black;
+        margin-top: 0.5%;
+        margin-left: 1%;
+    }
+    #redes-sociales{
+        display: inline-block;
+        width: 90%;
+        height: 25%;
+        border: 1px solid black;
+        margin-top: 0.5%;
+        margin-left: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .iconos{
+        display: inline-block;
+        width: 35%;
+        height: 32%;
+        border: 1px solid black;
+        margin-top: 1%;
+        margin-left: 7%;
+        border-radius: 15%;
+    }
+    .iconos img{
+        border-radius: 15%;
+    }
+    #contacto{
+        display: inline-block;
+        width: 50%;
+        height: 90%;
+        border: 1px solid black;
+        margin-top: 0.5%;
+        margin-left: 1%;
+        margin-bottom: 1%;
+    }
+    #condiciones{
+        display: inline-block;
+        width: 45%;
+        height: 100px;
+        border: 1px solid black;
+        margin-top: 0.5%;
+        margin-left: 1%;
+    }
+    h5{
+        text-align: center;
+        margin-top: 2% !important;
+        font-size: 90%;
+        text-decoration: none;
+    }
+    ul, li{
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+        font-size: 80%;
+    }
+    ul{
+        margin-bottom: 2%;
+    }
+}
