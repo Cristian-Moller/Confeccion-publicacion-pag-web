@@ -7,7 +7,6 @@ body{
     height: 100%;
     display: inline-flex;
     justify-content: space-around;
-    
 }
 
 #caja-fondo{
@@ -31,10 +30,7 @@ body{
         display: inline-flex;
         justify-content: center;
         flex-wrap: wrap;
-        /* justify-items: flex-start; */
         overflow: auto;
-        
-        
         
         #titulo-practicas{
             border: 1px solid black;
@@ -51,7 +47,6 @@ body{
             align-items: center;
             
         }
-        
         
         #practicas-realizadas{
             width: 90%;
@@ -91,7 +86,6 @@ body{
                 a:hover{
                     color: rgb(0, 0, 0);
                 }
-                
             }
             span:hover{
                 box-shadow: 0px 0px 15px rgb(73, 8, 133) inset;
@@ -104,7 +98,6 @@ body{
     }
 
     #info-cristian{
-        /* border: 1px solid black; */
         width: 20%;
         height: 80%;
         
@@ -120,16 +113,14 @@ body{
             flex-grow: 1;
 
             h1{
-                /* border: 1px solid black; */
                 width: 100%;
                 text-align: center;
 
                 p{
-                    color: rgb(80, 5, 150);
+                    color: white;
                 }
             }
             #foto-perfil{
-                /* border: 1px solid black; */
                 width: 100%;
                 height: 50%;
                 img{
@@ -139,13 +130,13 @@ body{
             }
 
             #boton-enlace{
-                /* border: 1px solid black; */
                 width: 100%;
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
                 a{
                     text-decoration: none;
+                    color: white;
                 }
             }
             #boton-enlace:hover{
@@ -180,9 +171,6 @@ body{
         display: inline-flex;
         flex-wrap: wrap;
         flex-direction: column;
-        /* justify-content: space-around; */
-        /* align-items: center; */
-
     
         #tabla-ejercicios{
             border: 1px solid black;
@@ -196,7 +184,6 @@ body{
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            /* justify-items: flex-start; */
             
             #titulo-practicas{
                 border: 1px solid black;
@@ -223,7 +210,6 @@ body{
                 margin-top: 24vw;
                 margin-bottom: 2vw;
                 
-                
                 span{
                     border: 1px solid black;
                     border-radius: 0.5vw;
@@ -234,7 +220,6 @@ body{
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    /* row-gap: 0.5vw; */
                     box-shadow: 0px 0px 15px rgb(73, 8, 133);
                     
                     p{
@@ -251,20 +236,16 @@ body{
                     a:hover{
                         color: rgb(0, 0, 0);
                     }
-                    
                 }
                 span:hover{
                     box-shadow: 0px 0px 15px rgb(73, 8, 133) inset;
                 }
-    
             }
         }
     
         #info-cristian{
-            /* border: 1px solid black; */
             width: 92%;
             height: 36%;
-            
     
             >div{
                 border: 1px solid black;
@@ -277,16 +258,14 @@ body{
                 flex-grow: 1;
     
                 h1{
-                    /* border: 1px solid black; */
                     width: 100%;
                     text-align: center;
     
                     p{
-                        color: rgb(80, 5, 150);
+                        color: white;
                     }
                 }
                 #foto-perfil{
-                    /* border: 1px solid black; */
                     width: 100%;
                     height: 50%;
                     img{
@@ -294,27 +273,20 @@ body{
                         height: 100%;
                     }
                 }
-    
                 #boton-enlace{
-                    /* border: 1px solid black; */
                     width: 100%;
                     display: inline-flex;
                     justify-content: center;
                     align-items: center;
                     a{
                         text-decoration: none;
+                        color: white;
                     }
                 }
                 #boton-enlace:hover{
                     box-shadow: 0px 0px 25px rgb(33, 63, 34) inset;
                 }
-    
             }
         }
     }
-    
-    
-    
-    
-    
 }

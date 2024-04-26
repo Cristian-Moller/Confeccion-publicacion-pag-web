@@ -90,7 +90,6 @@ body{
                 a:hover{
                     color: rgb(0, 0, 0);
                 }
-                
             }
             span:hover{
                 box-shadow: 0px 0px 15px rgb(73, 8, 133) inset;
@@ -121,7 +120,7 @@ body{
                 text-align: center;
 
                 p{
-                    color: rgb(80, 5, 150);
+                    color: white;
                 }
             }
             #foto-perfil{
@@ -142,20 +141,16 @@ body{
                 align-items: center;
                 a{
                     text-decoration: none;
+                    color: white;
                 }
             }
             #boton-enlace:hover{
-                color: rgb(80, 5, 150);
                 box-shadow: 0px 0px 25px rgb(33, 63, 34) inset;
             }
 
         }
     }
 }
-
-
-
-
 
 
 @media (max-width: 380px){
@@ -264,7 +259,6 @@ body{
                 span:hover{
                     box-shadow: 0px 0px 15px rgb(73, 8, 133) inset;
                 }
-    
             }
         }
     
@@ -272,7 +266,6 @@ body{
             /* border: 1px solid black; */
             width: 90%;
             height: 25%;
-            
     
             >div{
                 border: 1px solid black;
@@ -290,7 +283,7 @@ body{
                     text-align: center;
     
                     p{
-                        color: rgb(80, 5, 150);
+                        color: white;
                     }
                 }
                 #foto-perfil{
@@ -311,14 +304,13 @@ body{
                     align-items: center;
                     a{
                         text-decoration: none;
+                        color: white;
                     }
                 }
                 #boton-enlace:hover{
                     box-shadow: 0px 0px 25px rgb(33, 63, 34) inset;
                 }
-    
             }
         }
     }
-    
 }
