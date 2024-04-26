@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+}
+#volver-atrás{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+}
+#caja-fondo{
+    border: 1px solid black;
+    width: 50%;
+    height: 400px;
+    margin-top: 5%;
+    margin-left: 15%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    #titulo{
+        border: 1px solid black;
+        border-radius: 2vh;
+        width: 80%;
+        height: 25%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            color: red;
+            
+        }        
+    }
+    #palabras{
+        /* border: 1px solid black; */
+        border-radius: 2vh;
+        width: 80%;
+        height: 30%; 
+
+        #comparacion{
+            border: 1px solid black;
+            border-radius: 2vh;
+            width: 100%;
+            height: 100%;
+            font-size: 3vh;
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            #palabra1, #palabra2, #palabra3, #palabra4, #palabra5, #palabra6, #palabra7{
+                /* border: 1px solid black; */
+                /* border-radius: 2vh; */
+               /*  width: 50%; */
+                height: 50%; 
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }    
+            
+        }
+    }
+
+    #caja-solicitar{
+        border: 1px solid black;
+        border-radius: 2vh;
+        background-color: rgb(174, 76, 231);
+        color: white;
+        width: 80%;
+        height: 20%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4vh;
+    }
+}

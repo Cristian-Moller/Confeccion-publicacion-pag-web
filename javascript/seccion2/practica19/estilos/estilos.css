@@ -1,0 +1,142 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+}
+
+#volver-atrás {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  background-color: #372246;
+  color: white;
+  height: 2vw;
+}
+
+#caja-fondo {
+  border: 1px solid black;
+  width: 60%;
+  height: 400px;
+  margin-top: 5%;
+  margin-left: 15%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#caja-fondo #titulo {
+  border: 1px solid black;
+  border-radius: 2vh;
+  width: 80%;
+  height: 15%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#caja-fondo #titulo h1 {
+  color: red;
+}
+
+#caja-fondo #palabras {
+  /* border: 1px solid black; */
+  border-radius: 2vh;
+  width: 80%;
+  height: 50%;
+}
+
+#caja-fondo #palabras #palabra1 {
+  border: 1px solid black;
+  border-radius: 2vh;
+  width: 100%;
+  height: 50%;
+  font-size: 3vh;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#caja-fondo #palabras #palabra1 input {
+  /* width: 60%; */
+  height: 30%;
+  border: 0;
+  border-bottom: 2px dashed black;
+  text-align: center;
+  font-size: x-large;
+}
+
+#caja-fondo #palabras #palabra1 label {
+  margin-left: 1vw;
+}
+
+#caja-fondo #palabras #palabra2 {
+  border: 1px solid black;
+  border-radius: 2vh;
+  width: 100%;
+  height: 50%;
+  font-size: 3vh;
+  padding: 2vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#caja-fondo #palabras #palabra2 strong {
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+}
+
+#caja-fondo #caja-solicitar {
+  border: 1px solid black;
+  border-radius: 2vh;
+  background-color: #ae4ce7;
+  color: white;
+  width: 80%;
+  height: 15%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4vh;
+}
+/*# sourceMappingURL=estilos.css.map */
