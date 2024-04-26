@@ -8,6 +8,16 @@ body {
   margin-top: 4vw;
 }
 
+#volver-atrás {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  background-color: #372246;
+  color: white;
+  height: 2vw;
+}
+
 #logo {
   background-color: black;
   /* border: 1px solid black; */
@@ -164,11 +174,15 @@ body {
 @-webkit-keyframes logo-empresa {
   0% {
     color: chartreuse;
-    text-shadow: 0 0 0.2em chartreuse,  0 0 0.2em chartreuse, 0 0 0.2em chartreuse;
+    text-shadow: 0 0 0.2em chartreuse, 
+ 0 0 0.2em chartreuse,
+ 0 0 0.2em chartreuse;
   }
   25% {
     color: #bc3af8;
-    text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F, 0 0 0.2em #87F;
+    text-shadow: 0 0 0.2em #87F,
+ 0 0 0.2em #87F,
+ 0 0 0.2em #87F;
   }
   50% {
     color: #0decce;
@@ -187,11 +201,15 @@ body {
 @keyframes logo-empresa {
   0% {
     color: chartreuse;
-    text-shadow: 0 0 0.2em chartreuse,  0 0 0.2em chartreuse, 0 0 0.2em chartreuse;
+    text-shadow: 0 0 0.2em chartreuse, 
+ 0 0 0.2em chartreuse,
+ 0 0 0.2em chartreuse;
   }
   25% {
     color: #bc3af8;
-    text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F, 0 0 0.2em #87F;
+    text-shadow: 0 0 0.2em #87F,
+ 0 0 0.2em #87F,
+ 0 0 0.2em #87F;
   }
   50% {
     color: #0decce;
