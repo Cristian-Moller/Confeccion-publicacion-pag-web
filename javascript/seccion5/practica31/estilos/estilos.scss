@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    vertical-align: top;
+}
+#volver-atrás{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+}
+
+#caja-fondo{
+    border: 1px solid black;
+    width: 80%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-bottom: 5vh;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+
+    #titulo{
+        border: 1px solid black;
+        border-radius: 2vh;
+        width: 80%;
+        height: 8vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            color: black;
+            font-size: 6vh;
+            
+        }        
+    }
+    #cajas{
+        /* border: 1px solid black; */
+        border-radius: 2vh;
+        width: 80%;
+        height: 500px;
+        margin-bottom: 2vh;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        #caja1{
+            border: 1px dashed red;
+            width: 100%;
+            height: 35%;
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            
+            #caja-numeros{
+                /* border: 1px dashed red; */
+                width: 70%;
+                height: 100%;
+                font-size: 4vh;
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: space-around;
+
+               #caja-titulo{
+                    border: 1px solid black;
+                    border-radius: 2vh;
+                    width: 80%;
+                    height: 20%;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3vh;
+               }
+           
+                #numeros-azar{
+                   /*  border: 1px solid black; */
+                    border-radius: 2vh;
+                    width: 80%;
+                    height: 40%;
+                    display: inline-flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 3vh;
+
+                    >div{
+                        border: 1px solid black;
+                        border-radius: 2vh;
+                        width: 15%;
+                        height: 80%;
+                        font-size: 5vh;
+                        font-weight: bold;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                #caja-cubilete{
+                    border: 1px solid black;
+                    border-radius: 2vh;
+                    background-color: rgb(174, 76, 231);
+                    color: white;
+                    width: 80%;
+                    height: 20%;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3vh;
+                }
+                
+            }
+
+            #caja-reintegro{
+                /* border: 1px dashed red; */
+                width: 25%;
+                height: 100%;
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: space-around;
+
+                #caja-titulo1{
+                    border: 1px solid black;
+                    border-radius: 2vh;
+                    width: 80%;
+                    height: 20%;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3vh;
+               }
+
+               #numero-reintegro{
+                    /* border: 1px solid black; */
+                    border-radius: 2vh;
+                    width: 80%;
+                    height: 40%;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3vh;
+
+                    >div{
+                        border: 1px solid black;
+                        border-radius: 2vh;
+                        width: 40%;
+                        height: 80%;
+                        font-size: 5vh;
+                        font-weight: bold;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                }
+                #caja-vacia{
+                    width: 80%;
+                    height: 20%;
+                }
+            }
+          
+        }
+
+        #caja2{
+            border: 1px dashed red;
+            width: 100%;
+            height: 35%;
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            
+            #caja-numeros1{
+                /* border: 1px dashed red; */
+                width: 70%;
+                height: 100%;
+                font-size: 4vh;
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: space-around;
+
+               #caja-titulo2{
+                    border: 1px solid black;
+                    border-radius: 2vh;
+                    width: 80%;
+                    height: 20%;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3vh;
+               }
+           
+                #numeros-seleccionados{
+                   /*  border: 1px solid black; */
+                    border-radius: 2vh;
+                    width: 80%;
+                    height: 40%;
+                    display: inline-flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 3vh;
+
+                    >input{
+                        border: 1px solid black;
+                        border-radius: 2vh;
+                        width: 14%;
+                        height: 80%;
+                        font-size: 5vh;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                }
+
+                #caja-comprobar{
+                    border: 1px solid black;
+                    border-radius: 2vh;
+                    background-color: rgb(174, 76, 231);
+                    color: white;
+                    width: 80%;
+                    height: 20%;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3vh;
+                }
+                
+            }
+
+            #caja-reintegro1{
+                /* border: 1px dashed red; */
+                width: 25%;
+                height: 100%;
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: space-around;
+
+                #caja-titulo3{
+                    width: 80%;
+                    height: 20%;
+               }
+
+               #numero-reintegro1{
+                    /* border: 1px solid black; */
+                    border-radius: 2vh;
+                    width: 80%;
+                    height: 40%;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3vh;
+
+                    >input{
+                        border: 1px solid black;
+                        border-radius: 2vh;
+                        width: 40%;
+                        height: 80%;
+                        font-size: 5vh;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                    
+                }
+                #caja-vacia{
+                    width: 80%;
+                    height: 20%;
+                }
+            }
+          
+        }
+
+        #caja3{
+            /* border: 1px dashed red; */
+            width: 100%;
+            height: 20%;
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3vh;
+            row-gap: 1vh;
+            column-gap: 1vh;
+
+            button{
+                background-color: grey;
+                color: white;
+                width: 100%;
+                height: 100%;
+                border-radius: 2vh;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                h3{
+                    width: 100%;
+                    height: 80%;
+                    font-size: 5vh;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            /* #rdo1, #rdo2{
+                border: 1px solid black;
+                width: 45%;
+                height: 30%;
+            } */
+        }
+
+    }
+
+}
+

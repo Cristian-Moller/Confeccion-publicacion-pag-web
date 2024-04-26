@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    vertical-align: top;
+}
+#volver-atrás{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+}
+#caja-fondo{
+    border: 1px solid black;
+    width: 70%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-bottom: 5vh;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+
+    #titulo{
+        border: 1px solid black;
+        border-radius: 2vh;
+        width: 80%;
+        height: 8vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            color: red;
+            font-size: 4vh;
+            
+        }        
+    }
+    #cajas{
+        /* border: 1px solid black; */
+        border-radius: 2vh;
+        width: 80%;
+        height: auto;
+        margin-bottom: 2vh;
+        display: inline-flex;
+        justify-content: space-between;
+
+       #caja1{
+            border: 1px dashed red;
+            width: 100%;
+            height: 55vh;
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-around;
+
+            #caja-array{
+                border: 1px dashed red;
+                width: 80%;
+                height: 10vh;
+                font-size: 3vh;
+                display: inline-flex;
+                justify-content: space-around;
+                align-items: center;
+
+                #array-generado{
+                    border: 1px solid black;
+                    width: 70%;
+                    height: 5vh; /* deberia ser auto una vez tenga valores */
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: large;
+                }
+            }
+            #caja-agregar{
+                border: 1px dashed red;
+                width: 80%;
+                height: 10vh;
+                font-size: 3vh;
+                display: inline-flex;
+                justify-content: space-around;
+                align-items: center;
+
+                input{
+                    width: 35vh;
+                    height: 5vh;
+                    font-size: 2.5vh;
+                    text-align: center;
+                }
+            }
+            #caja-ultimo-eliminado, #caja-ultimo-agregado{
+                border: 1px dashed red;
+                width: 60%;
+                height: 10vh;
+                font-size: 3vh;
+                display: inline-flex;
+                justify-content: space-around;
+                align-items: center;
+
+                #ultimo-eliminado, #ultimo-agregado{
+                    border: 1px solid black;
+                    width: 40%;
+                    height: 5vh;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: large;
+                }   
+            }
+
+        }
+
+    }
+    
+}
+#caja2{
+    border: 1px solid black;
+    width: 15%;
+    height: 67vh;
+    margin-top: 4%;
+    margin-left: 2%;
+    margin-bottom: 5vh;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    div{
+        width: 70%;
+    }
+    button{
+        background-color: blueviolet;
+        color: white;
+        width: 100%;
+        height: 7vh;
+        font-size: 2.5vh
+    }
+    #eliminar-valor{
+        text-align: center;
+        font-size: 3vh;
+        
+        #eliminar{
+            width: 100%;
+            height: 4vh;
+            font-size: 3vh;
+        }
+    }
+}
