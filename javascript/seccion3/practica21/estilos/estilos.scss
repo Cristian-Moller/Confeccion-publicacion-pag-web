@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    vertical-align: top;
+}
+#volver-atrás{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    background-color: rgb(55, 34, 70);
+    color: white;
+    height: 2vw;
+}
+#caja-fondo{
+    border: 1px solid black;
+    width: 85%;
+    height: 550px;
+    margin-top: 5%;
+    margin-left: 10%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+
+    #titulo{
+        border: 1px solid black;
+        border-radius: 2vh;
+        width: 80%;
+        height: 15%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            color: red;
+            font-size: 4vh;
+            
+        }        
+    }
+    #cajas{
+        /* border: 1px solid black; */
+        border-radius: 2vh;
+        width: 80%;
+        height: 75%;
+        margin-bottom: 2vh;
+        display: inline-flex;
+        justify-content: space-between;
+
+       #caja1{
+            border: 1px dashed red;
+            width: 48%;
+            height: 100%;
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-around;
+
+            #caja-img{
+                border: 1px dashed red;
+                width: 80%;
+                height: 45%;
+                text-align: center;
+
+                img{
+                    width: 50%;
+                    height: 100%;
+                }
+            }
+            #caja-radio{
+                border: 1px dashed red;
+                width: 80%;
+                height: 10vh;
+                font-size: 3vh;
+                display: inline-flex;
+                justify-content: space-around;
+                align-items: center;
+
+                input{
+                    height: 5vh;
+                    text-align: center;
+                    font-size: large;
+                }
+            }
+            #caja-calcular{
+                border: 1px solid black;
+                border-radius: 2vh;
+                background-color: rgb(174, 76, 231);
+                color: white;
+                width: 80%;
+                height: 15%;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 3vh;
+            }
+
+        }
+
+        #caja2{
+            border: 1px dashed red;
+            width: 48%;
+            height: 100%;
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-around;
+
+            #caja-superficie{
+                border: 1px dashed red;
+                width: 80%;
+                height: 20%;
+                font-size: 4vh;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #caja-formulaSup{
+                border: 1px dashed red;
+                width: 80%;
+                height: 20%;
+                font-size: 5vh;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #caja-volumen{
+                border: 1px dashed red;
+                width: 80%;
+                height: 20%;
+                font-size: 4vh;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #caja-formulaVol{
+                border: 1px dashed red;
+                width: 80%;
+                height: 20%;
+                font-size: 5vh;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+    }
+
+   
+}
