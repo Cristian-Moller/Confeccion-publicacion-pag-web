@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://s0.2mdn.net/sadbundle/17491997340142903344/728x90/728x90/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="ad.size" content="width=728,height=90">
+    <link rel="stylesheet" type="text/css" href="./style(1).css"> 
+    <title>728x90</title>
+    <script type="text/javascript">
+    
+  (function() {
+    var MAX_URL_PARAM_LENGTH = 34;
+    var CLICK_X_URL_KEY = 'nx';
+    var CLICK_Y_URL_KEY = 'ny';
+    var CREATIVE_DIMENSIONS_KEY = 'dim';
+    var AD_URL_PARAM = '&adurl=';
+
+    var relegateNavigation = '';
+    var urlParamMap = {};
+
+    urlParamMap[CLICK_X_URL_KEY] = null;
+    urlParamMap[CLICK_Y_URL_KEY] = null;
+    urlParamMap[CREATIVE_DIMENSIONS_KEY] = null;
+
+    var handleClickTagMessage = function(e) {
+      try {
+        var eventData = JSON.parse(e.data);
+      } catch (err) {
+        return;
+      }
+      if (eventData.isInitClickTag) {
+        if (eventData.clickTags) {
+          for (var i = 0; i < eventData.clickTags.length; i++) {
+            var clkTag = eventData.clickTags[i];
+            window[clkTag.name] = clkTag.url;
+          }
+        } else if (eventData.clickTag) {
+          window.clickTag = eventData.clickTag;
+        }
+        relegateNavigation = eventData.relegateNavigation;
+      }
+    };
+
+    var storeClickCoordinates = function(e) {
+      urlParamMap[CLICK_X_URL_KEY] = Math.round(e.clientX);
+      urlParamMap[CLICK_Y_URL_KEY] = Math.round(e.clientY);
+    };
+
+    var getCreativeDimensions = function() {
+      return window.innerWidth + 'x' + window.innerHeight;
+    }
+
+    var getExitClickParams = function(e) {
+      urlParamMap[CREATIVE_DIMENSIONS_KEY] = getCreativeDimensions();
+
+      var exitParams = '';
+      for (var key in urlParamMap) {
+        exitParams += '&' + key + '=';
+        if (urlParamMap[key] !== null) {
+          exitParams += urlParamMap[key];
+        }
+      }
+      return exitParams;
+    }
+
+    var appendExitClickParams = function(url) {
+      var adUrlIndex = url.toLowerCase().indexOf(AD_URL_PARAM);
+      var paramsToBeAdded = getExitClickParams();
+      if (adUrlIndex > -1 && paramsToBeAdded.length <= MAX_URL_PARAM_LENGTH) {
+        url = url.substr(0, adUrlIndex) + paramsToBeAdded +
+          url.substr(adUrlIndex);
+      };
+      return url;
+    };
+
+    if (open.call) {
+      window.open = function(open) {
+        return function(url, name, features) {
+          url = appendExitClickParams(url);
+          if (relegateNavigation === 'parent') {
+            var message = {'clickTag': url, 'isPostClickTag': true};
+            parent.postMessage(JSON.stringify(message), '*');
+          } else {
+            var args = [url, name];
+            if (features) {
+              args.push(features);
+            }
+            open.apply(window, args);
+          }
+        };
+      }(window.open);
+    }
+
+    if (window.addEventListener) {
+      window.addEventListener(
+          'message', handleClickTagMessage, false);
+      window.addEventListener('mousedown', storeClickCoordinates, true);
+    } else {
+      window.attachEvent('onmessage', handleClickTagMessage);
+    }
+  })();
+    
+  </script><script>
+     var clickTag = "https://www.hertz.es/rentacar/ofertas-especiales/alquiler-de-vehiculos-electricos/";
+    </script></head>
+    
+    <body onload="bannerAnimation();">
+    <div id="container" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+      
+      
+      <img class="size" id="bg1" src="./bg1.jpg" style="transform: matrix3d(1.2, 2.0944e-05, 0, 0, -2.0944e-05, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+      <img class="size" id="legal" src="./legal.png" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+      <img class="size" id="bg2" src="./bg2.jpg" style="transform: matrix3d(1, 1.74533e-05, 0, 0, -1.74533e-05, 1, 0, 0, 0, 0, 1, 0, -18.385, 0, 0, 1); opacity: 1;">
+      <img class="size" id="legal2" src="./legal2.png" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+      
+       
+       
+      
+       <img class="size" id="cta" src="./cta.png" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+        
+        
+
+
+    <div id="bannerBorder" class="size" onclick="bannerClick();"></div>
+
+    </div>
+    <script type="text/javascript" src="./tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js.descarga"></script>
+	<script type="text/javascript" src="./main.js.descarga"></script>
+    
+</body></html>

@@ -1,0 +1,35 @@
+
+#container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90px;
+    width: 728px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #ffffff;
+    opacity: 0;
+    
+}
+
+
+.size{
+	position:absolute;
+    margin-bottom: 10px solid;
+	top: 0px;
+	left: 0px;
+    height: 90px;
+    width: 728px;
+}
+#bannerBorder{
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+#bg3{
+    background-color: #ffcc00;
+}
+
+#bg1,#bg2{
+    width: 748px;
+}
+

@@ -1,0 +1,38 @@
+var loopCount = 0;
+function bannerAnimation(){
+   
+   TweenMax.set([container,legal2,legal,cta],{opacity:1, y:0})
+    
+   TweenMax.set([bg1,bg2],{scale:1, x:-20, y:0})
+   TweenMax.set(bg2,{opacity:0})
+   TweenMax.set([legal2],{scale:1, opacity:0, x:0})
+   TweenMax.set([legal],{scale:1, x:0,y:0,delay:7})
+   TweenMax.set([bg1],{scale:1, x:-20,delay:7})
+
+   TweenMax.to([bg1],4,{x:0, rotationZ:0.001, ease:Power0.easeNone, delay:0})
+   TweenMax.to([bg1],0,{scale:1.2, y:0,  force3D:true,  delay:2})
+     
+
+     
+     TweenMax.to([bg2,legal2],0,{opacity:1, delay:4})
+     
+     
+     TweenMax.to([bg2],4,{x:0, rotationZ:0.001, ease:Power0.easeNone, delay:4})
+     TweenMax.to([bg2],0,{scale:1.2, y:0,  force3D:true,  delay:6})
+     
+     
+
+     if(loopCount <1){
+         loopCount++;
+         
+         
+         
+         TweenMax.delayedCall(8,bannerAnimation)
+      }
+  }
+   function bannerClick()
+   {
+       window.open(clickTag,"_blank");
+   }
+   
+  
